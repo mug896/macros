@@ -1,0 +1,709 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161001174-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161001174-6');
+</script>
+
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Arithmatic | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./m4_text_handling.html" />
+    
+    
+    <link rel="prev" href="./m4_builtin_macros.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.8.1"
+        data-chapter-title="Arithmatic"
+        data-filepath="m4_arithmetic.md"
+        data-basepath="."
+
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bug_reports.html">
+            
+                
+                    <a href="./bug_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Bug reports
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="cpp.html">
+            
+                
+                    <a href="./cpp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CPP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="macros.html">
+            
+                
+                    <a href="./macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="function-like_macros.html">
+            
+                
+                    <a href="./function-like_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Function-like Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="one_two_hash.html">
+            
+                
+                    <a href="./one_two_hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        # , ##
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="variadic_macros.html">
+            
+                
+                    <a href="./variadic_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                        Variadic Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="argument_prescan.html">
+            
+                
+                    <a href="./argument_prescan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                        Argument Prescan
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="predefined_macros.html">
+            
+                
+                    <a href="./predefined_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                        Predefined Macros
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="conditionals.html">
+            
+                
+                    <a href="./conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="diagnostics.html">
+            
+                
+                    <a href="./diagnostics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Diagnostics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="line_control.html">
+            
+                
+                    <a href="./line_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Line Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="pragmas.html">
+            
+                
+                    <a href="./pragmas.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Pragmas
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="command_line_options.html">
+            
+                
+                    <a href="./command_line_options.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Command-line options
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="m4.html">
+            
+                
+                    <a href="./m4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        M4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="m4_quotes.html">
+            
+                
+                    <a href="./m4_quotes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Quotes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="m4_positional_parameters.html">
+            
+                
+                    <a href="./m4_positional_parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Positional Parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="m4_local_variables.html">
+            
+                
+                    <a href="./m4_local_variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Local Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="m4_conditionals_and_loops.html">
+            
+                
+                    <a href="./m4_conditionals_and_loops.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Conditionals and Loops
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="m4_diverting.html">
+            
+                
+                    <a href="./m4_diverting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Diverting
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="m4_input_control.html">
+            
+                
+                    <a href="./m4_input_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Input Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="m4_file_inclusion.html">
+            
+                
+                    <a href="./m4_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        File Inclusion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="m4_builtin_macros.html">
+            
+                
+                    <a href="./m4_builtin_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Built-in Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.8.1" data-path="m4_arithmetic.html">
+            
+                
+                    <a href="./m4_arithmetic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        Arithmatic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="m4_text_handling.html">
+            
+                
+                    <a href="./m4_text_handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        Text Handling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="m4_shell_commands.html">
+            
+                
+                    <a href="./m4_shell_commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        Shell Commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="m4_miscellaneous.html">
+            
+                
+                    <a href="./m4_miscellaneous.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        Miscellaneous
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="m4_debugging.html">
+            
+                
+                    <a href="./m4_debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Debugging
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="macros-for-doing-arithmetic">Macros for doing arithmetic</h2>
+<p>&#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xB9E4;&#xD06C;&#xB85C;&#xC5D0; <code>()</code> &#xAC00; &#xC5C6;&#xC73C;&#xBA74; &#xB9E4;&#xD06C;&#xB85C;&#xB85C; &#xC778;&#xC2DD;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="incr-decr">incr, decr</h3>
+<pre><code>$ m4 &lt;&lt;\@                 $ m4 &lt;&lt;\@
+incr(4)                   decr(7)
+@                         @
+
+5                         6
+</code></pre><h3 id="eval">eval</h3>
+<blockquote>
+<p><strong>eval</strong> ( <em>expression</em> )<br><strong>eval</strong> ( <em>expression, radix</em> )</p>
+</blockquote>
+<p>M4 &#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC22B;&#xC790;&#xB3C4; &#xC2A4;&#xD2B8;&#xB9C1;&#xC73C;&#xB85C; &#xCDE8;&#xAE09;&#xD558;&#xC9C0;&#xB9CC; <code>eval</code> &#xB9E4;&#xD06C;&#xB85C;&#xC5D0;&#xC11C;&#xB294; &#xC22B;&#xC790;&#xB85C; &#xCDE8;&#xAE09;&#xB418;&#xC5B4;
+&#xC5F0;&#xC0B0;&#xB429;&#xB2C8;&#xB2E4;. &#xC804;&#xB2EC;&#xB41C; &#xC778;&#xC218;&#xB294; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; prescan &#xC5D0;&#xC758;&#xD574; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xD655;&#xC7A5;&#xB418;&#xB294;&#xB370;
+&#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB294; &#xC22B;&#xC790;&#xAC00; &#xB3FC;&#xC57C; &#xD558;&#xACE0; quotes &#xC774; &#xC874;&#xC7AC;&#xD558;&#xBA74; &#xC548; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@                            $ m4 &lt;&lt;\@
+define(`foo&apos;, 5)                     eval( index(`Hello world&apos;, `llo&apos;) &gt;= 0)
+define(`bar&apos;, `foo&apos;)                 eval( index(`Hello world&apos;, `llo&apos;) == -1)
+eval(bar + 100)                      @
+@                                    
+                                     1       # &#xCC38;&#xC740;  1
+105                                  0       # &#xAC70;&#xC9D3;&#xC740; 0
+</code></pre><pre><code>$ m4 &lt;&lt;\@                            $ m4 &lt;&lt;\@
+eval(10)                             eval(1000)
+eval(010)      # 8 &#xC9C4;&#xC218;               eval(1000, 8)      # 1000 &#xC744; 8 &#xC9C4;&#xC218;&#xB85C; &#xCD9C;&#xB825;
+eval(0x10)     # 16 &#xC9C4;&#xC218;              eval(1000, 16)     # 1000 &#xC744; 16 &#xC9C4;&#xC218;&#xB85C; &#xCD9C;&#xB825;
+@                                    @
+
+10                                   1000
+8                                    1750     # 8 &#xC9C4;&#xC218;
+16                                   3e8      # 16 &#xC9C4;&#xC218;
+---------------------------
+
+$ m4 &lt;&lt;\@
+define(`square&apos;, `eval(`($1) ** 2&apos;)&apos;)
+square(9)
+@
+
+81
+</code></pre><p>&#xC5F0;&#xC0B0;&#xC790; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xAC00; &#xB192;&#xC740; &#xAC83;&#xBD80;&#xD130; &#xB0AE;&#xC740; &#xC21C;&#xC11C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code> <code>-</code></td>
+<td>unary plus and minus</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>exponent</td>
+</tr>
+<tr>
+<td><code>*</code> <code>/</code> <code>%</code></td>
+<td>multiplication, division, modulo ( eval( 8 / -5 ) == -1 )</td>
+</tr>
+<tr>
+<td><code>+</code> <code>-</code></td>
+<td>addition and subtraction</td>
+</tr>
+<tr>
+<td><code>&lt;&lt;</code> <code>&gt;&gt;</code></td>
+<td>shift up or down ( eval( -8 &gt;&gt; 1 ) == -4 )</td>
+</tr>
+<tr>
+<td><code>==</code> <code>!=</code> <code>&lt;</code> <code>&lt;=</code> <code>&gt;=</code> <code>&gt;</code></td>
+<td>relational</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>logical <code>NOT</code> ( converts non-zero to 0, 0 to 1 )</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>bitwise <code>NOT</code> ( eval( ~0 ) == -1 )</td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>bitwise <code>AND</code> ( eval( 6 &amp; 5 ) == 4 )</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>bitwise <code>Exclusive OR</code> ( eval( 3 ^ 2 ) == 1 )</td>
+</tr>
+<tr>
+<td><code>|</code></td>
+<td>bitwise <code>OR</code> ( eval( 1 | 2 ) == 3 )</td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>logical <code>AND</code></td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>logical <code>OR</code></td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./m4_builtin_macros.html" class="navigation navigation-prev " aria-label="Previous page: Built-in Macros"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./m4_text_handling.html" class="navigation navigation-next " aria-label="Next page: Text Handling"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,784 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161001174-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161001174-6');
+</script>
+
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Command-line options | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./m4.html" />
+    
+    
+    <link rel="prev" href="./pragmas.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.6"
+        data-chapter-title="Command-line options"
+        data-filepath="command_line_options.md"
+        data-basepath="."
+
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bug_reports.html">
+            
+                
+                    <a href="./bug_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Bug reports
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="cpp.html">
+            
+                
+                    <a href="./cpp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CPP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="macros.html">
+            
+                
+                    <a href="./macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="function-like_macros.html">
+            
+                
+                    <a href="./function-like_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Function-like Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="one_two_hash.html">
+            
+                
+                    <a href="./one_two_hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        # , ##
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="variadic_macros.html">
+            
+                
+                    <a href="./variadic_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                        Variadic Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="argument_prescan.html">
+            
+                
+                    <a href="./argument_prescan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                        Argument Prescan
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="predefined_macros.html">
+            
+                
+                    <a href="./predefined_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                        Predefined Macros
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="conditionals.html">
+            
+                
+                    <a href="./conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="diagnostics.html">
+            
+                
+                    <a href="./diagnostics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Diagnostics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="line_control.html">
+            
+                
+                    <a href="./line_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Line Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="pragmas.html">
+            
+                
+                    <a href="./pragmas.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Pragmas
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="command_line_options.html">
+            
+                
+                    <a href="./command_line_options.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Command-line options
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="m4.html">
+            
+                
+                    <a href="./m4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        M4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="m4_quotes.html">
+            
+                
+                    <a href="./m4_quotes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Quotes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="m4_positional_parameters.html">
+            
+                
+                    <a href="./m4_positional_parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Positional Parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="m4_local_variables.html">
+            
+                
+                    <a href="./m4_local_variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Local Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="m4_conditionals_and_loops.html">
+            
+                
+                    <a href="./m4_conditionals_and_loops.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Conditionals and Loops
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="m4_diverting.html">
+            
+                
+                    <a href="./m4_diverting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Diverting
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="m4_input_control.html">
+            
+                
+                    <a href="./m4_input_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Input Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="m4_file_inclusion.html">
+            
+                
+                    <a href="./m4_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        File Inclusion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="m4_builtin_macros.html">
+            
+                
+                    <a href="./m4_builtin_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Built-in Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="m4_arithmetic.html">
+            
+                
+                    <a href="./m4_arithmetic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        Arithmatic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="m4_text_handling.html">
+            
+                
+                    <a href="./m4_text_handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        Text Handling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="m4_shell_commands.html">
+            
+                
+                    <a href="./m4_shell_commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        Shell Commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="m4_miscellaneous.html">
+            
+                
+                    <a href="./m4_miscellaneous.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        Miscellaneous
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="m4_debugging.html">
+            
+                
+                    <a href="./m4_debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Debugging
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="commandline-options">Command-line options</h1>
+<h3 id="d--u">-D , -U</h3>
+<p>&#xBA85;&#xB839; &#xB77C;&#xC778;&#xC5D0;&#xC11C;&#xB3C4; <code>-D</code> &#xC635;&#xC158;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC815;&#xC758;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+<code>=</code> &#xB97C; &#xC774;&#xC6A9;&#xD574; &#xAC12;&#xC744; &#xB530;&#xB85C; &#xC815;&#xC758;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; <code>1</code> &#xB85C; &#xC124;&#xC815;&#xB429;&#xB2C8;&#xB2E4;.
+<code>-U</code> &#xC635;&#xC158;&#xC740; predefined &#xB9E4;&#xD06C;&#xB85C;&#xB098; &#xC774;&#xC804;&#xC5D0; <code>-D</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC815;&#xC758;&#xD55C; &#xB9E4;&#xD06C;&#xB85C;&#xB97C;
+undef &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">$ gcpp -D __foo -D __bar=<span class="hljs-number">200</span>
+<span class="hljs-comment">#ifdef __foo</span>
+<span class="hljs-string">&quot;__foo&quot;</span> is : __foo
+<span class="hljs-string">&quot;__bar&quot;</span> is : __bar
+<span class="hljs-comment">#endif</span>
+@
+
+<span class="hljs-string">&quot;__foo&quot;</span> is : <span class="hljs-number">1</span>              <span class="hljs-comment"># __foo &#xAC12;&#xC740; 1 &#xC774; &#xB41C;&#xB2E4;.</span>
+<span class="hljs-string">&quot;__bar&quot;</span> is : <span class="hljs-number">200</span>
+</code></pre>
+<h3 id="include-fileimacros-file">-include <em>file</em><br>-imacros <em>file</em></h3>
+<p>&#xC774; &#xC635;&#xC158;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC18C;&#xC2A4;&#xD30C;&#xC77C;&#xC758; &#xC81C;&#xC77C;&#xC704;&#xC5D0; <code>#include &quot;file&quot;</code> &#xC744; &#xB123;&#xB294; &#xAC83;&#xACFC; &#xAC19;&#xAC8C;&#xB429;&#xB2C8;&#xB2E4;.
+&#xD55C; &#xAC00;&#xC9C0; &#xCC28;&#xC774;&#xC810;&#xC740; &#xD30C;&#xC77C;&#xC744; &#xCC3E;&#xC744; &#xB54C; &#xC18C;&#xC2A4;&#xD30C;&#xC77C;&#xC774; &#xC704;&#xCE58;&#xD55C; &#xACF3;&#xC5D0;&#xC11C; &#xCC3E;&#xC9C0; &#xC54A;&#xACE0; 
+&#xD604;&#xC7AC; &#xC804;&#xCC98;&#xB9AC;&#xAE30;&#xAC00; &#xC2E4;&#xD589; &#xC911;&#xC778; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.
+<code>-imacros</code> &#xC635;&#xC158;&#xC740; &#xB9E4;&#xD06C;&#xB85C;&#xB9CC; include &#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="i-diriquote-dirisystem-diridirafter-dir">-I <em>dir</em><br>-iquote <em>dir</em><br>-isystem <em>dir</em><br>-idirafter <em>dir</em></h3>
+<p><code>#include</code> &#xC9C0;&#xC2DC;&#xC790;&#xC5D0;&#xC11C; &#xD30C;&#xC77C; &#xC774;&#xB984;&#xC740; <code>#include &lt;filename&gt;</code> &#xC640; <code>#include &quot;filename&quot;</code>
+&#xB450; &#xAC00;&#xC9C0; &#xD615;&#xD0DC;&#xB85C; &#xC791;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xCCAB; &#xBC88;&#xC9F8;&#xB97C; &#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354;&#xB77C;&#xACE0; &#xD558;&#xACE0; &#xAE30;&#xC874;&#xC5D0; gcc &#xC5D0; &#xC124;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB97C;
+&#xC774;&#xC6A9;&#xD574; &#xC0C1;&#xB300; &#xACBD;&#xB85C;&#xB85C; &#xAC04;&#xB2E8;&#xD788; &#xD45C;&#xAE30;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xB450; &#xBC88;&#xC9F8; quoted &#xD615;&#xD0DC;&#xC758; &#xACBD;&#xC6B0;&#xB294; &#xD30C;&#xC77C;&#xC744; &#xCC3E;&#xC744; &#xB54C; &#xD604;&#xC7AC; &#xC18C;&#xC2A4;&#xD30C;&#xC77C;&#xACFC; &#xAC19;&#xC740; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>gcc &#xC5D0; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB294; &#xB2E4;&#xC74C; &#xBA85;&#xB839;&#xC73C;&#xB85C; &#xC870;&#xD68C;&#xD574;&#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">$ cpp -xc -Wp,-v /dev/null |&amp; grep -P <span class="hljs-string">&apos;^\s*/[^ \t]+$&apos;</span>        <span class="hljs-comment"># C</span>
+ /usr/lib/gcc/x86_64-linux-gnu/<span class="hljs-number">10</span>/include
+ /usr/<span class="hljs-built_in">local</span>/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+
+$ cpp -xc++ -Wp,-v /dev/null |&amp; grep -P <span class="hljs-string">&apos;^\s*/[^ \t]+$&apos;</span>      <span class="hljs-comment"># C++</span>
+ /usr/include/c++/<span class="hljs-number">10</span>
+ /usr/include/x86_64-linux-gnu/c++/<span class="hljs-number">10</span>
+ /usr/include/c++/<span class="hljs-number">10</span>/backward
+ /usr/lib/gcc/x86_64-linux-gnu/<span class="hljs-number">10</span>/include
+ /usr/<span class="hljs-built_in">local</span>/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+
+--------------------------------------------------
+
+$ ls /usr/include/stdio.h
+/usr/include/stdio.h
+
+$ ls /usr/include/x86_64-linux-gnu/sys/socket.h 
+/usr/include/x86_64-linux-gnu/sys/socket.h
+
+<span class="hljs-comment">#include &lt;stdio.h&gt;            # &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC0C1;&#xB300; &#xACBD;&#xB85C;&#xB85C; &#xAC04;&#xB2E8;&#xD788; &#xD45C;&#xAE30;&#xD560; &#xC218; &#xC788;&#xB2E4;.</span>
+<span class="hljs-comment">#include &lt;sys/socket.h&gt;</span>
+</code></pre>
+<h4 id="&#xD5E4;&#xB354;-&#xD30C;&#xC77C;&#xC744;-&#xCC3E;&#xB294;-&#xC21C;&#xC11C;">&#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC744; &#xCC3E;&#xB294; &#xC21C;&#xC11C;</h4>
+<p>&#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC635;&#xC158;&#xC740; &#xAC19;&#xC740; &#xC635;&#xC158;&#xC744; &#xC5EC;&#xB7EC; &#xBC88; &#xC911;&#xBCF5;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xC218;&#xAC00; &#xC788;&#xACE0;
+left-to-right &#xC21C;&#xC73C;&#xB85C; &#xCC3E;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.
+<code>-iquote</code> &#xC635;&#xC158;&#xC740; <code>#include &quot;filename&quot;</code> &#xD615;&#xD0DC;&#xC5D0;&#xB9CC; &#xC801;&#xC6A9;&#xC774; &#xB418;&#xACE0; 
+<code>-I</code>, <code>-isystem</code>, <code>-idirafter</code> &#xC635;&#xC158;&#xC758; &#xACBD;&#xC6B0;&#xB294; <code>#include &lt;filename&gt;</code>, <code>#include &quot;filename&quot;</code>
+&#xB450; &#xAC00;&#xC9C0; &#xD615;&#xD0DC;&#xC5D0; &#xBAA8;&#xB450; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li><p>&#xC18C;&#xC2A4;&#xD30C;&#xC77C;&#xC744; &#xC791;&#xC131;&#xD560; &#xB54C; &#xC124;&#xC815;&#xD55C; <code>#include &quot;filename&quot;</code> &#xD30C;&#xC77C;&#xC744; &#xC81C;&#xC77C; &#xBA3C;&#xC800; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.<br>( &#xD604;&#xC7AC; &#xC18C;&#xC2A4;&#xD30C;&#xC77C;&#xACFC; &#xAC19;&#xC740; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. )</p>
+</li>
+<li><p>&#xBA85;&#xB839; &#xB77C;&#xC778;&#xC5D0;&#xC11C; <code>-iquote dirname</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xD30C;&#xC77C;&#xC744; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xBA85;&#xB839; &#xB77C;&#xC778;&#xC5D0;&#xC11C; <code>-I dirname</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xBA85;&#xB839; &#xB77C;&#xC778;&#xC5D0;&#xC11C; <code>-isystem dirname</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>gcc &#xC5D0; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; &#xBA85;&#xB839; &#xB77C;&#xC778;&#xC5D0;&#xC11C; <code>-idirafter dirname</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+</ol>
+<p>&#xC704;&#xC5D0;&#xC11C; &#xC21C;&#xC11C;&#xB97C; &#xBCF4;&#xBA74; &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xBCF4;&#xB2E4; <code>-I</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB97C; &#xBA3C;&#xC800; &#xCC3E;&#xAC8C; &#xB418;&#xBBC0;&#xB85C;
+<code>-I</code> &#xC635;&#xC158;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC744; override &#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+( vendor-supplied &#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC744; &#xC124;&#xC815;&#xD560; &#xB54C;&#xB294; <code>-isystem</code> &#xC635;&#xC158;&#xC744; &#xC0AC;&#xC6A9;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4; ).</p>
+<h4 id="&#xC2DC;&#xC2A4;&#xD15C;-&#xD5E4;&#xB354;-&#xD30C;&#xC77C;&#xC740;-&#xB2E4;&#xB974;&#xAC8C;-&#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;">&#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC740; &#xB2E4;&#xB974;&#xAC8C; &#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;.</h4>
+<p>&#xB9AC;&#xB205;&#xC2A4; &#xAC19;&#xC740; &#xC6B4;&#xC601;&#xCCB4;&#xC81C;&#xB098; gcc &#xC758; runtime libraries &#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC758; &#xACBD;&#xC6B0;&#xB294;
+strictly conforming C &#xD558;&#xAC8C; &#xC791;&#xC131;&#xD560; &#xC218;&#xAC00; &#xC5C6;&#xB2E4;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.
+&#xB530;&#xB77C;&#xC11C; gcc &#xB294; <a href="https://gcc.gnu.org/onlinedocs/cpp/System-Headers.html" target="_blank">&#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354;</a>
+&#xB97C; &#xD2B9;&#xBCC4;&#xD788; &#xCDE8;&#xAE09;&#xD574;&#xC11C; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC744; &#xD504;&#xB85C;&#xC138;&#xC2F1; &#xD560;&#xB54C;
+&#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xBAA8;&#xB4E0; warning &#xC744; suppress &#xD55C;&#xB2E4;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><code>-isystem</code> &#xC640; <code>-idirafter</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB294; &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB85C; &#xAC04;&#xC8FC;&#xB418;&#xBBC0;&#xB85C;
+&#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC640; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;.
+&#xB2E4;&#xC74C;&#xC744; &#xBCF4;&#xBA74; &#xB9AC;&#xB205;&#xC2A4; &#xC18C;&#xC2A4;&#xC5D0;&#xC11C; <code>linux/jiffies.h</code> &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC744; &#xB9E4;&#xD06C;&#xB85C; &#xD655;&#xC7A5;&#xD558;&#xB824;&#xACE0; &#xD55C; &#xAC83;&#xC778;&#xB370;
+<code>-I</code> &#xC635;&#xC158;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; warning &#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0;&#xB9CC; <code>-isystem</code> &#xC635;&#xC158;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC83;&#xC744;
+&#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> linux-source-<span class="hljs-number">5.8</span>.<span class="hljs-number">0</span>
+
+$ cpp <span class="hljs-operator">-d</span>D -I include -I include/uapi -I arch/x86/include -I arch/x86/include/uapi \
+          -I arch/x86/include/generated -I arch/x86/include/generated/uapi \
+          &lt;&lt;&lt; $<span class="hljs-string">&apos;#include &lt;linux/kconfig.h&gt;\n#include &lt;linux/jiffies.h&gt;&apos;</span> &gt; /dev/null
+. . .
+arch/x86/include/asm/processor.h:<span class="hljs-number">188</span>: warning: <span class="hljs-string">&quot;cache_line_size&quot;</span> redefined
+  <span class="hljs-number">188</span> | <span class="hljs-comment">#define cache_line_size() (boot_cpu_data.x86_cache_alignment)</span>
+      | 
+. . .
+--------------------------------------------------------------------------------
+
+<span class="hljs-comment"># -isystem &#xC635;&#xC158;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC2DC;&#xC2A4;&#xD15C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB85C; &#xC124;&#xC815;&#xD558;&#xBA74; warning &#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</span>
+$ cpp <span class="hljs-operator">-d</span>D -isystem include -isystem include/uapi \
+          -isystem arch/x86/include -isystem arch/x86/include/uapi \
+          -isystem arch/x86/include/generated -isystem arch/x86/include/generated/uapi \
+          &lt;&lt;&lt; $<span class="hljs-string">&apos;#include &lt;linux/kconfig.h&gt;\n#include &lt;linux/jiffies.h&gt;&apos;</span> &gt; /dev/null
+$
+</code></pre>
+<p>&#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354;&#xB85C; &#xC124;&#xC815;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC5D0;&#xB294; <code>#pragma GCC system_header</code> &#xB97C; &#xC774;&#xC6A9;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC774; &#xBC29;&#xBC95;&#xC740; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC640; &#xC0C1;&#xAD00;&#xC5C6;&#xC774; &#xC801;&#xC6A9;&#xC774; &#xB418;&#xACE0; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xD30C;&#xC77C; &#xC911;&#xAC04;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xBA74; &#xC774;&#xD6C4;
+&#xB0B4;&#xC6A9;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB9CC; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.  ( &#xC774;&#xAC83;&#xC740; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC5D0;&#xC11C;&#xB9CC; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.)</p>
+<h3 id="nostdincnostdinc">-nostdinc<br>-nostdinc++</h3>
+<p>&#xC774; &#xC635;&#xC158;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD5E4;&#xB354; &#xD30C;&#xC77C;&#xC744; &#xCC3E;&#xC744; &#xB54C; 
+gcc &#xC5D0; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB418;&#xC5B4; &#xC788;&#xB294; standard system directories &#xB97C; &#xCC3E;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.
+<code>-I</code>, <code>-iquote</code>, <code>-isystem</code>, <code>-idirafter</code> &#xC635;&#xC158;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xB9CC; &#xCC3E;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. </p>
+<h3 id="wsystemheaders">-Wsystem-headers</h3>
+<p>&#xC2DC;&#xC2A4;&#xD15C; &#xD5E4;&#xB354; &#xC5D0;&#xC11C;&#xB3C4; warnings &#xC744; &#xCD9C;&#xB825;&#xD558;&#xAC8C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h1 id="quiz">Quiz</h1>
+<p>&#xB9AC;&#xB205;&#xC2A4; &#xCEE4;&#xB110; &#xC18C;&#xC2A4;&#xC5D0;&#xC11C; <code>linux/pci.h</code> &#xD5E4;&#xB354;&#xB97C; include &#xD588;&#xC744;&#xB54C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; &#xD568;&#xC218;&#xB97C; &#xBCF4;&#xB824;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C; &#xD560;&#xAE4C;&#xC694;?</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> linux-source-<span class="hljs-number">5.8</span>.<span class="hljs-number">0</span>
+
+$ header-function &lt;&lt;\@ -- -isystem include -isystem include/uapi \
+        -isystem arch/x86/include -isystem arch/x86/include/uapi \
+        -isystem arch/x86/include/generated -isystem arch/x86/include/generated/uapi \
+        | less
+
+<span class="hljs-comment">#include &lt;linux/kconfig.h&gt;</span>
+<span class="hljs-comment">#include &lt;linux/pci.h&gt;</span>
+@
+</code></pre>
+<p>&#xD30C;&#xC77C; &#xB2E8;&#xC704;&#xB85C; &#xC804;&#xCC98;&#xB9AC; &#xC644;&#xB8CC;&#xB41C; &#xACB0;&#xACFC;&#xB97C; &#xBCF4;&#xB824;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> linux-source-<span class="hljs-number">5.8</span>.<span class="hljs-number">0</span>
+$ cp /boot/config-`uname -r` ./.config
+
+<span class="hljs-comment"># net/ipv4/tcp.c &#xD30C;&#xC77C;&#xC758; &#xC804;&#xCC98;&#xB9AC; &#xACB0;&#xACFC;&#xB97C; &#xBCF4;&#xB824;&#xBA74;</span>
+$ make net/ipv4/tcp.i
+  . . .
+  CPP     net/ipv4/tcp.i      &lt;---- &#xC804;&#xCC98;&#xB9AC; &#xC644;&#xB8CC;&#xB41C; &#xD30C;&#xC77C;
+
+<span class="hljs-comment"># arch/x86/kernel/vmlinux.lds.S &#xD30C;&#xC77C;&#xC758; &#xC804;&#xCC98;&#xB9AC; &#xACB0;&#xACFC;&#xB97C; &#xBCF4;&#xB824;&#xBA74;</span>
+$ make arch/x86/kernel/vmlinux.lds
+  . . .
+  LDS     arch/x86/kernel/vmlinux.lds      &lt;---- &#xC804;&#xCC98;&#xB9AC; &#xC644;&#xB8CC;&#xB41C; &#xD30C;&#xC77C;
+</code></pre>
+<p>&#xB2E4;&#xC74C;&#xC740; <code>*.c</code> &#xD30C;&#xC77C;&#xC758; &#xC804;&#xCC98;&#xB9AC; &#xACB0;&#xACFC;&#xB97C; &#xBCFC; &#xC218; &#xC788;&#xB294; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC785;&#xB2C8;&#xB2E4;.
+&#xACB0;&#xACFC;&#xB97C; clang-format &#xC744; &#xD574;&#xC11C; &#xCD9C;&#xB825;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xD30C;&#xC77C; &#xC0AC;&#xC774;&#xC988;&#xAC00; &#xD074; &#xACBD;&#xC6B0; &#xC2DC;&#xAC04;&#xC774; &#xC624;&#xB798; &#xAC78;&#xB9B4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> linux-source-<span class="hljs-number">5.8</span>.<span class="hljs-number">0</span>
+$ header-make block/ioctl.c         <span class="hljs-comment"># &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;</span>
+. . .
+</code></pre>
+<pre><code class="lang-bash">$ cat header-make
+<span class="hljs-comment">#!/bin/bash -e</span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-built_in">test</span> <span class="hljs-variable">$#</span> <span class="hljs-operator">-eq</span> <span class="hljs-number">0</span>; <span class="hljs-keyword">then</span>
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Usage: <span class="hljs-variable">${0##*/}</span> filename.c&quot;</span> &gt;&amp;<span class="hljs-number">2</span>
+    <span class="hljs-built_in">exit</span> <span class="hljs-number">1</span>
+<span class="hljs-keyword">fi</span>
+
+target_c=<span class="hljs-variable">$1</span>
+target_i=<span class="hljs-variable">${target_c%.*}</span>.i
+
+<span class="hljs-keyword">if</span> ! target_p=`readlink <span class="hljs-operator">-e</span> <span class="hljs-variable">$target_c</span>`; <span class="hljs-keyword">then</span>
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Error: <span class="hljs-variable">$target_c</span> file does not exist&quot;</span> &gt;&amp;<span class="hljs-number">2</span>
+    <span class="hljs-built_in">exit</span> <span class="hljs-number">1</span>
+<span class="hljs-keyword">fi</span>
+
+tmpfile=`mktemp -p /dev/shm`
+cp <span class="hljs-operator">-f</span> <span class="hljs-string">&quot;<span class="hljs-variable">$target_p</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$tmpfile</span>&quot;</span>
+<span class="hljs-built_in">trap</span> <span class="hljs-string">&apos;mv -f &quot;$tmpfile&quot; &quot;$target_p&quot;&apos;</span> EXIT
+
+sed -E -i <span class="hljs-string">&apos;s/^\s*#\s*include.*/\n\a\n&amp;\n\a\n/&apos;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$target_c</span>&quot;</span>
+
+make <span class="hljs-string">&quot;<span class="hljs-variable">$target_i</span>&quot;</span> &gt;&amp;<span class="hljs-number">2</span>
+
+sed <span class="hljs-string">&apos;/\a/,/\a/d&apos;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$target_i</span>&quot;</span> |
+sed -zE <span class="hljs-string">&apos;s/^.*\n# [0-9]+ &quot;&lt;command-line&gt;&quot; [0-9]+\n//&apos;</span> |
+clang-format | vi --not<span class="hljs-operator">-a</span>-term -R -c <span class="hljs-string">&apos;set ft=c&apos;</span> -
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./pragmas.html" class="navigation navigation-prev " aria-label="Previous page: Pragmas"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./m4.html" class="navigation navigation-next " aria-label="Next page: M4"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

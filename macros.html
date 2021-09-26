@@ -1,0 +1,1033 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161001174-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161001174-6');
+</script>
+
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Macros | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./function-like_macros.html" />
+    
+    
+    <link rel="prev" href="./cpp.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.1"
+        data-chapter-title="Macros"
+        data-filepath="macros.md"
+        data-basepath="."
+
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bug_reports.html">
+            
+                
+                    <a href="./bug_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Bug reports
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="cpp.html">
+            
+                
+                    <a href="./cpp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CPP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="macros.html">
+            
+                
+                    <a href="./macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="function-like_macros.html">
+            
+                
+                    <a href="./function-like_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Function-like Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="one_two_hash.html">
+            
+                
+                    <a href="./one_two_hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        # , ##
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="variadic_macros.html">
+            
+                
+                    <a href="./variadic_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                        Variadic Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="argument_prescan.html">
+            
+                
+                    <a href="./argument_prescan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                        Argument Prescan
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="predefined_macros.html">
+            
+                
+                    <a href="./predefined_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                        Predefined Macros
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="conditionals.html">
+            
+                
+                    <a href="./conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="diagnostics.html">
+            
+                
+                    <a href="./diagnostics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Diagnostics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="line_control.html">
+            
+                
+                    <a href="./line_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Line Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="pragmas.html">
+            
+                
+                    <a href="./pragmas.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Pragmas
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="command_line_options.html">
+            
+                
+                    <a href="./command_line_options.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Command-line options
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="m4.html">
+            
+                
+                    <a href="./m4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        M4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="m4_quotes.html">
+            
+                
+                    <a href="./m4_quotes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Quotes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="m4_positional_parameters.html">
+            
+                
+                    <a href="./m4_positional_parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Positional Parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="m4_local_variables.html">
+            
+                
+                    <a href="./m4_local_variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Local Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="m4_conditionals_and_loops.html">
+            
+                
+                    <a href="./m4_conditionals_and_loops.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Conditionals and Loops
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="m4_diverting.html">
+            
+                
+                    <a href="./m4_diverting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Diverting
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="m4_input_control.html">
+            
+                
+                    <a href="./m4_input_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Input Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="m4_file_inclusion.html">
+            
+                
+                    <a href="./m4_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        File Inclusion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="m4_builtin_macros.html">
+            
+                
+                    <a href="./m4_builtin_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Built-in Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="m4_arithmetic.html">
+            
+                
+                    <a href="./m4_arithmetic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        Arithmatic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="m4_text_handling.html">
+            
+                
+                    <a href="./m4_text_handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        Text Handling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="m4_shell_commands.html">
+            
+                
+                    <a href="./m4_shell_commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        Shell Commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="m4_miscellaneous.html">
+            
+                
+                    <a href="./m4_miscellaneous.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        Miscellaneous
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="m4_debugging.html">
+            
+                
+                    <a href="./m4_debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Debugging
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="macros">Macros</h1>
+<p>&#xB9E4;&#xD06C;&#xB85C;&#xC5D0;&#xB294; object-like &#xB9E4;&#xD06C;&#xB85C;&#xC640; &#xD568;&#xC218;&#xC640; &#xAC19;&#xC774; &#xC0DD;&#xAE34; function-like &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xBAA8;&#xB450; <code>#define</code> &#xC9C0;&#xC2DC;&#xC790;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xC815;&#xC758;&#xD558;&#xACE0; &#xC0AD;&#xC81C;&#xD560; &#xB54C;&#xB294; <code>#undef</code> &#xC9C0;&#xC2DC;&#xC790;&#xB97C; &#xC774;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.
+&#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; object-like &#xB9E4;&#xD06C;&#xB85C;&#xC640; function-like &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xAC19;&#xC740; &#xC774;&#xB984;&#xC73C;&#xB85C; 
+&#xC815;&#xC758;&#xD574; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4; ( warning &#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4; ).
+&#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984;&#xC774; quotes &#xC548;&#xC5D0; &#xC62C; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>&lt; object-like macro &gt;            &lt; function-like macro &gt;
+
+#define FOO 123                  #define BAR(a, b) ((a) + (b))    // &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758; 
+
+#undef FOO                       #undef BAR                       // &#xB9E4;&#xD06C;&#xB85C; &#xC0AD;&#xC81C;
+
+--------------------------------------------------------------
+
+$ gcpp
+#define BAR(a, b) ((a) + (b))
+#define BAR 123                  // &#xB3D9;&#xC77C;&#xD55C; &#xC774;&#xB984;&#xC73C;&#xB85C; &#xC815;&#xC758;&#xD558;&#xBA74; warning &#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.
+
+BAR
+@
+
+&lt;stdin&gt;:2: warning: &quot;BAR&quot; redefined
+&lt;stdin&gt;:1: note: this is the location of the previous definition
+
+123
+--------------------------------------------------------------
+
+$ gcpp
+#define FOO 123         // &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;
+&quot;FOO is: &quot; FOO
+&apos;FOO is: &apos; FOO
+#undef FOO              // &#xB9E4;&#xD06C;&#xB85C; &#xC0AD;&#xC81C;
+&quot;FOO is: &quot; FOO
+@
+
+&quot;FOO is: &quot; 123          # quotes &#xC548;&#xC5D0;&#xC11C;&#xB294; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.
+&apos;FOO is: &apos; 123
+
+&quot;FOO is: &quot; FOO          # &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xAC00; &#xC0AD;&#xC81C;&#xB418;&#xC5B4; &#xADF8;&#xB300;&#xB85C; FOO &#xAC00; &#xB41C;&#xB2E4;.
+</code></pre><pre><code>/usr/include/features.h
+
+#ifdef _GNU_SOURCE
+# undef  _ISOC95_SOURCE
+# define _ISOC95_SOURCE    1
+# undef  _ISOC99_SOURCE
+# define _ISOC99_SOURCE    1
+# undef  _ISOC11_SOURCE
+# define _ISOC11_SOURCE    1
+. . .
+</code></pre><h4 id="&#xB9E4;&#xD06C;&#xB85C;-&#xC774;&#xB984;-&#xC791;&#xC131;&#xBC95;">&#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984; &#xC791;&#xC131;&#xBC95;</h4>
+<p>&#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984;&#xC740; C/C++ &#xC2DD;&#xBCC4;&#xC790; ( identifiers ) &#xB97C; &#xB9CC;&#xB4DC;&#xB294; &#xB8F0;&#xC744; &#xB530;&#xB985;&#xB2C8;&#xB2E4;.
+&#xADF8;&#xB7EC;&#xB2C8;&#xAE4C; &#xC54C;&#xD30C;&#xBCB3;, &#xC22B;&#xC790;, <code>_</code> &#xB9CC; &#xC0AC;&#xC6A9;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xACE0; &#xB9E8; &#xC55E;&#xC5D0;&#xB294; &#xC22B;&#xC790;&#xAC00; &#xC62C; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xBCF4;&#xD1B5; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xB2E4;&#xB978; &#xC2DD;&#xBCC4;&#xC790;&#xC640; &#xAD6C;&#xBD84;&#xD558;&#xAE30; &#xC704;&#xD574; &#xB300;&#xBB38;&#xC790;&#xB85C; &#xC791;&#xC131;&#xC744; &#xD569;&#xB2C8;&#xB2E4;.
+&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xC774;&#xB984;&#xB4E4;&#xC740; <a href="https://www.gnu.org/software/libc/manual/html_node/Reserved-Names.html" target="_blank">reserved names</a> &#xC73C;&#xB85C; &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758; &#xC2DC; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC548; &#xB418;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<ul>
+<li><p>C standard library &#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xC774;&#xB984;&#xB4E4; ( &#xD568;&#xC218;, &#xB9E4;&#xD06C;&#xB85C; ... &#xCF54;&#xB4DC;&#xB97C; &#xC77D;&#xB294; &#xB2E4;&#xB978; &#xC0AC;&#xB78C;&#xC774; &#xD5F7;&#xAC08;&#xB9B4; &#xC218; &#xC788;&#xC74C; )</p>
+</li>
+<li><p>&#xC2DD;&#xBCC4;&#xC790; &#xC774;&#xB984;&#xC774; two underscores &#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xACBD;&#xC6B0;</p>
+</li>
+<li><p>&#xC2DD;&#xBCC4;&#xC790; &#xC774;&#xB984;&#xC774; underscore &#xB85C; &#xC2DC;&#xC791;&#xD558;&#xACE0; &#xB4A4;&#xC5D0; &#xB300;&#xBB38;&#xC790;&#xAC00; &#xC624;&#xB294; &#xACBD;&#xC6B0;</p>
+</li>
+<li><p>global namespace &#xC5D0;&#xC11C; underscore &#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xC774;&#xB984;&#xB4E4;</p>
+</li>
+</ul>
+<blockquote>
+<p>&#xCC38;&#xACE0;&#xB85C; linux kenel &#xC740; C standard library &#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;
+&#xC774;&#xC640; &#xAC19;&#xC740; &#xC81C;&#xD55C;&#xC774; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><strong>Noncompliant Code</strong></p>
+<pre><code>#ifndef _MY_FILE
+#define _MY_FILE      // &apos;_&apos; &#xBB38;&#xC790;&#xB85C; &#xC2DC;&#xC791;
+
+#define __FIELD_VAL(field) foo##field     // &quot;__&quot; &#xB450; &#xAC1C;&#xC758; underscores &#xB85C; &#xC2DC;&#xC791;
+
+#define free(a, b) ...     // free &#xB294; standard library &#xD568;&#xC218; &#xC774;&#xB984;
+
+#define _Num 100           // &apos;_&apos; &#xBB38;&#xC790;&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xACE0; &#xB4A4;&#xC5D0; &#xB300;&#xBB38;&#xC790;
+
+#endif
+</code></pre><p><strong>Compliant Code</strong></p>
+<pre><code>#ifndef MY_FILE
+#define MY_FILE
+
+#define FIELD_VAL(field) foo##field
+
+#define clean(a, b) ...
+
+#define Num_ 100
+
+#endif
+</code></pre><p><code>-</code> &#xC640; <code>.</code> &#xBB38;&#xC790;&#xB294; &#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984;&#xC744; &#xAD6C;&#xC131;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xC73C;&#xBBC0;&#xB85C;
+&#xCCAB; &#xBC88;&#xC9F8;&#xC640; &#xB450; &#xBC88;&#xC9F8; <code>foo</code> &#xB294; &#xB9E4;&#xD06C;&#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xC9C0;&#xB9CC; &#xC138; &#xBC88;&#xC9F8;&#xC758; <code>_foo</code> &#xC640; &#xB124; &#xBC88;&#xC9F8;&#xC758; <code>foo_</code>
+&#xB294; &#xAC01;&#xAC01; <code>foo</code> &#xC640;&#xB294; &#xB2E4;&#xB978; &#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984;&#xC774; &#xB418;&#xBBC0;&#xB85C; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ gcpp
+#define foo bar()
+
+foo-&gt;files          # &apos;-&apos; &#xBB38;&#xC790;&#xB294; &#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984;&#xC5D0; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.
+foo.files
+_foo-&gt;files         # _foo &#xC640; foo_ &#xB294; &#xB2E4;&#xB978; &#xB9E4;&#xD06C;&#xB85C; &#xC774;&#xB984;&#xC774; &#xB41C;&#xB2E4;.
+foo_-&gt;files
+@
+
+bar()-&gt;files
+bar().files
+_foo-&gt;files
+foo_-&gt;files
+</code></pre><h4 id="&#xB9E4;&#xD06C;&#xB85C;&#xB294;-oneline-&#xC73C;&#xB85C;-&#xC791;&#xC131;&#xD569;&#xB2C8;&#xB2E4;">&#xB9E4;&#xD06C;&#xB85C;&#xB294; One-line &#xC73C;&#xB85C; &#xC791;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</h4>
+<p>Multiple lines &#xC73C;&#xB85C; &#xC791;&#xC131;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; backslash-newline &#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p>backslash-newline &#xC740; <code>\</code> &#xB97C; &#xC774;&#xC6A9;&#xD574; newline &#xC744; escape &#xD558;&#xB294;&#xAC83;&#xC744; &#xB9D0;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<pre><code>$ gcpp
+#define WARN_IF(EXP) \
+do { if (EXP) \
+        fprintf (stderr, &quot;Warning: &quot; #EXP &quot;\n&quot;); } \
+while (0)
+
+WARN_IF(x == 0);
+@
+
+do { if (x == 0) fprintf (stderr, &quot;Warning: &quot; &quot;x == 0&quot; &quot;\n&quot;); } while (0);
+</code></pre><p>Multiple lines &#xC73C;&#xB85C; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC791;&#xC131;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xC804;&#xCC98;&#xB9AC;&#xAE30;&#xB97C; &#xD1B5;&#xD574; &#xD655;&#xC7A5;&#xB41C; &#xACB0;&#xACFC;&#xB294; &#xD55C; &#xC904;&#xB85C;
+&#xCD9C;&#xB825;&#xC774; &#xB418;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xAC00;&#xB3C5;&#xC131;&#xC774;&#xB098; &#xB514;&#xBC84;&#xAE45;&#xD558;&#xAE30;&#xAC00; &#xC5B4;&#xB835;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xC774;&#xB54C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; shell &#xD568;&#xC218;&#xB97C; &#xC791;&#xC131;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD3B8;&#xB9AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-sh">format-<span class="hljs-function"><span class="hljs-title">macro</span></span> ()
+{
+    <span class="hljs-keyword">if</span> [ <span class="hljs-variable">$#</span> == <span class="hljs-number">0</span> ]; <span class="hljs-keyword">then</span>
+        <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;ERROR: Source file required&quot;</span> &gt;&amp;<span class="hljs-number">2</span>
+        <span class="hljs-built_in">return</span> <span class="hljs-number">1</span>
+    <span class="hljs-keyword">fi</span>
+    file=<span class="hljs-variable">$1</span>
+    sed -E <span class="hljs-string">&apos;/^\s*#\s*(include\s*&lt;[^&gt;]+&gt;)\s*$/{ s//\1;/; s/\//\a/g }&apos;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$file</span>&quot;</span> |
+        cpp -P | clang-format -style=<span class="hljs-string">&quot;{BasedOnStyle: Google, IndentWidth: 4}&quot;</span> |
+        sed -E <span class="hljs-string">&apos;/^(include\s*&lt;[^&gt;]+&gt;);$/{ s//#\1/; s/\a/\//g }&apos;</span>
+}
+
+$ format-macro parser.c &gt; format_parser.c
+$ gcc -g format_parser.c
+</code></pre>
+<h4 id="&#xB9E4;&#xD06C;&#xB85C;&#xB294;-&#xC815;&#xC758;&#xB41C;-&#xC21C;&#xC11C;&#xC5D0;-&#xB530;&#xB77C;-&#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;">&#xB9E4;&#xD06C;&#xB85C;&#xB294; &#xC815;&#xC758;&#xB41C; &#xC21C;&#xC11C;&#xC5D0; &#xB530;&#xB77C; &#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;.</h4>
+<p>&#xB530;&#xB77C;&#xC11C; &#xB2E4;&#xC74C;&#xC758; &#xACBD;&#xC6B0; <code>foo = AA</code> &#xB294; &#xB9E4;&#xD06C;&#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<pre><code>$ gcpp
+foo = AA;
+#define AA 100
+bar = AA;
+@
+
+foo = AA;
+bar = 100;
+</code></pre><p>TABLESIZE &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC815;&#xC758;&#xB420; &#xB2F9;&#xC2DC; BUFSIZE &#xB294; 1024 &#xC774;&#xC9C0;&#xB9CC; &#xC774;&#xD6C4;&#xC5D0; BUFSIZE &#xAC00; &#xC7AC;&#xC815;&#xC758;&#xB418;&#xC5B4;
+TABLESIZE &#xB294; 4096 &#xC73C;&#xB85C; &#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ gcpp
+#define BUFSIZE 1024
+#define TABLESIZE BUFSIZE
+#undef BUFSIZE
+#define BUFSIZE 4096
+
+TABLESIZE                // &#xD604;&#xC7AC; &#xC704;&#xCE58;&#xC5D0;&#xC11C; TABLESIZE --&gt; BUFSIZE --&gt; 4096
+@
+
+4096
+</code></pre><h4 id="&#xB9E4;&#xD06C;&#xB85C;-&#xD655;&#xC7A5;&#xC740;-terminal-token-&#xC774;-&#xB098;&#xC62C;-&#xB54C;&#xAE4C;&#xC9C0;-&#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;">&#xB9E4;&#xD06C;&#xB85C; &#xD655;&#xC7A5;&#xC740; terminal token &#xC774; &#xB098;&#xC62C; &#xB54C;&#xAE4C;&#xC9C0; &#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</h4>
+<p>TABLESIZE &#xB294; BUFSIZE &#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xACE0;, &#xADF8;&#xB2E4;&#xC74C; BUFSIZE &#xB294; SIZE_1 &#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xACE0; 
+SIZE_1 &#xB294; &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; terminal token &#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294; 1024 &#xB85C; &#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ gcpp
+#define TABLESIZE BUFSIZE
+#define BUFSIZE SIZE_1
+#define SIZE_1 1024
+
+TABLESIZE
+@
+
+1024             # TABLESIZE ---&gt; BUFSIZE ---&gt; SIZE_1 ---&gt; 1024
+</code></pre><p><code>current-&gt;files</code> &#xC5D0;&#xC11C; current &#xB294; <code>get_current()</code> &#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xACE0; 
+&#xB2E4;&#xC2DC; <code>get_current()</code> &#xB294; <code>(current_thread_info()-&gt;task)</code> &#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ gcpp
+#define get_current() (current_thread_info()-&gt;task)
+#define current get_current()
+
+int __get_unused_fd_flags(unsigned flags, unsigned long nofile)
+{
+    return __alloc_fd(current-&gt;files, 0, nofile, flags);
+}
+@
+
+int __get_unused_fd_flags(unsigned flags, unsigned long nofile)
+{
+    return __alloc_fd((current_thread_info()-&gt;task)-&gt;files, 0, nofile, flags);
+}
+</code></pre><p>&#xB2E4;&#xC74C;&#xC758; &#xACBD;&#xC6B0; <code>DEFINE_XARRAY(foobar)</code> &#xB294; <code>DEFINE_XARRAY_FLAGS(foobar, 0)</code> &#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xB294;&#xB370;
+&#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB97C; &#xC0B4;&#xD3B4;&#xBCF4;&#xBA74; &#xB9E4;&#xCE6D;&#xB418;&#xB294; &#xB9E4;&#xD06C;&#xB85C; <code>DEFINE_XARRAY_FLAGS</code> &#xAC00; &#xC874;&#xC7AC;&#xD558;&#xBBC0;&#xB85C; 
+<code>struct xarray name = XARRAY_INIT(foobar, 0)</code> &#xB85C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xACE0;,
+&#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB97C; &#xC0B4;&#xD3B4;&#xBCF4;&#xBA74; &#xB9E4;&#xCE6D;&#xB418;&#xB294; &#xB9E4;&#xD06C;&#xB85C; <code>XARRAY_INIT</code> &#xAC00; &#xC874;&#xC7AC;&#xD558;&#xBBC0;&#xB85C; &#xB2E4;&#xC2DC; &#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ gcpp
+#define XARRAY_INIT(name, flags) { \
+    .xa_lock = __SPIN_LOCK_UNLOCKED(name.xa_lock), \
+    .xa_flags = flags, \
+    .xa_head = NULL, \
+}
+
+#define DEFINE_XARRAY_FLAGS(name, flags) \
+    struct xarray name = XARRAY_INIT(name, flags)
+
+#define DEFINE_XARRAY(name) DEFINE_XARRAY_FLAGS(name, 0)
+
+DEFINE_XARRAY(foobar)
+@
+
+struct xarray foobar = { .xa_lock = __SPIN_LOCK_UNLOCKED(foobar.xa_lock),
+.xa_flags = 0, .xa_head = NULL, }
+</code></pre><h4 id="cpp-&#xB294;-&#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C;-recursion-&#xC774;-&#xC548;&#xB429;&#xB2C8;&#xB2E4;">CPP &#xB294; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; recursion &#xC774; &#xC548;&#xB429;&#xB2C8;&#xB2E4;.</h4>
+<p>&#xB9E4;&#xD06C;&#xB85C;&#xB294; terminal token &#xC774; &#xB098;&#xC62C; &#xB54C;&#xAE4C;&#xC9C0; &#xC5F0;&#xC774;&#xC5B4;&#xC11C; &#xD655;&#xC7A5;&#xC774; &#xB418;&#xB294;&#xB370;
+&#xADF8;&#xC911;&#xC5D0; &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB85C; &#xC790;&#xAE30; &#xC790;&#xC2E0;&#xC774; &#xB098;&#xC624;&#xAC8C; &#xB418;&#xBA74; &#xB354; &#xC774;&#xC0C1; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.
+( &#xBB3C;&#xB860; &#xB2E4;&#xB978; &#xB9E4;&#xD06C;&#xB85C;&#xB294; &#xACC4;&#xC18D; &#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;. )</p>
+<pre><code>$ gcpp
+#define foo (4 + foo)
+
+foo
+@
+
+(4 + foo)       # &#xBB34;&#xD55C; loop &#xB97C; &#xBC29;&#xC9C0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xB354;&#xC774;&#xC0C1; &#xD655;&#xC7A5;&#xC774; &#xC548;&#xB41C;&#xB2E4;.
+
+-----------------------------------------------------------------
+
+$ gcpp
+#define x (4 + y)
+#define y (2 * x)
+
+x                           1. x        ---&gt;  (4 + y) &#xB85C; &#xD655;&#xC7A5;&#xB418;&#xACE0;
+@                           2. (4 + y)  ---&gt;  (4 + (2 * x)) &#xB85C; &#xD655;&#xC7A5;&#xB418;&#xACE0;
+                            3. (4 + (2 * x)) &#xB294; &#xB354;&#xC774;&#xC0C1; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.
+(4 + (2 * x))
+
+-----------------------------------------------------------------
+
+$ gcpp
+#define foo bar
+#define bar foo 200
+
+foo bar                     1. foo  ---&gt;  bar  ---&gt;  foo 200  &#xB85C; &#xD655;&#xC7A5;&#xB418;&#xACE0;
+@                              foo &#xC790;&#xC2E0;&#xC740; &#xB354;&#xC774;&#xC0C1; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.
+                            2. bar  ---&gt;  foo 200  ---&gt;  bar 200  &#xB85C; &#xD655;&#xC7A5;&#xB418;&#xACE0;
+foo 200 bar 200                bar &#xC790;&#xC2E0;&#xC740; &#xB354;&#xC774;&#xC0C1; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.
+</code></pre><p>&#xB9CC;&#xC57D;&#xC5D0; enum &#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xAC12;&#xC744; <code>#ifdef</code> &#xC5D0;&#xC11C;&#xB3C4; &#xCC38;&#xC774; &#xB418;&#xAC8C; &#xD558;&#xB824;&#xBA74; 
+&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC815;&#xC758;&#xD558;&#xBA74; &#xB9E4;&#xD06C;&#xB85C;&#xB3C4; &#xC815;&#xC758;&#xB418;&#xACE0; enum &#xAC12;&#xB3C4; &#xC720;&#xC9C0;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>#define EPERM EPERM
+
+--------------------
+
+$ gcpp                                         $ gcpp
+#define EPERM                                  #define EPERM EPERM
+
+#ifdef EPERM                                   #ifdef EPERM
+EPERM + 1                                      EPERM + 1
+#endif                                         #endif
+@                                              @
+               &#xC804;&#xCC98;&#xB9AC;&#xAE30;&#xC5D0; &#xC758;&#xD574;                 
+ + 1    &lt;----  enum &#xAC12;&#xC774; &#xC0AD;&#xC81C;&#xB41C;&#xB2E4;.                EPERM + 1
+</code></pre><pre><code>// /usr/include/x86_64-linux-gnu/bits/socket_type.h &#xCC38;&#xC870;
+
+enum __socket_type
+{
+  SOCK_STREAM = 1,        /* Sequenced, reliable, connection-based
+                   byte streams.  */
+#define SOCK_STREAM SOCK_STREAM
+  SOCK_DGRAM = 2,        /* Connectionless, unreliable datagrams
+                   of fixed maximum length.  */
+#define SOCK_DGRAM SOCK_DGRAM
+  SOCK_RAW = 3,            /* Raw protocol interface.  */
+#define SOCK_RAW SOCK_RAW
+. . .
+</code></pre><h4 id="cpp-&#xC5D0;&#xC11C;&#xB294;-&#xB9E4;&#xD06C;&#xB85C;&#xAC00;-&#xC7AC;&#xC815;&#xC758;-&#xB420;-&#xACBD;&#xC6B0;-warning-&#xC774;-&#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;">CPP &#xC5D0;&#xC11C;&#xB294; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC7AC;&#xC815;&#xC758; &#xB420; &#xACBD;&#xC6B0; warning &#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</h4>
+<p>&#xAE30;&#xC874;&#xC5D0; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC815;&#xC758;&#xB418;&#xC5B4; &#xC788;&#xB294;&#xB370; &#xB2E4;&#xC2DC; &#xB2E4;&#xB978; &#xAC12;&#xC73C;&#xB85C; &#xC7AC;&#xC815;&#xC758; &#xB420; &#xACBD;&#xC6B0; warning &#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.
+&#xADF8;&#xB798;&#xC57C; &#xC758;&#xB3C4;&#xCE58; &#xC54A;&#xAC8C; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC7AC;&#xC815;&#xC758; &#xB418;&#xB294;&#xC9C0; &#xC54C; &#xC218; &#xC788;&#xACA0;&#xC8E0;.
+&#xC7AC;&#xC815;&#xC758; &#xB418;&#xB354;&#xB77C;&#xB3C4; &#xAC12;&#xC774; &#xAC19;&#xC73C;&#xBA74; warning &#xC740; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<blockquote>
+<p>warning &#xC740; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0;&#xB9CC; &#xB9E4;&#xD06C;&#xB85C; &#xAC12;&#xC740; &#xC0C8;&#xB85C; &#xC815;&#xC758;&#xB429;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<pre><code># &#xB3D9;&#xC77C;&#xD55C; &#xC774;&#xB984;&#xC758; &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC7AC;&#xC815;&#xC758;&#xB418;&#xC5B4; warning &#xC774; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;.
+
+$ gcpp
+#define BUFSIZE 1024
+#define BUFSIZE 4096
+
+BUFSIZE
+@
+&lt;stdin&gt;:2: warning: &quot;BUFSIZE&quot; redefined
+&lt;stdin&gt;:1: note: this is the location of the previous definition
+
+4096          # warning &#xC740; &#xBC1C;&#xC0DD;&#xD558;&#xC9C0;&#xB9CC; &#xAC12;&#xC740; &#xC0C8;&#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+
+-------------------------------------------
+
+# &#xC7AC;&#xC815;&#xC758;&#xD558;&#xB824;&#xBA74; &#xBA3C;&#xC800; #undef &#xC744; &#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.
+
+#define BUFSIZE 1024
+#undef BUFSIZE
+#define BUFSIZE 4096
+</code></pre><p>&#xC815;&#xC758; &#xB0B4;&#xC6A9;&#xC774; &#xAC19;&#xB2E4;&#xB294; &#xAC83;&#xC740; &#xACF5;&#xBC31;&#xC73C;&#xB85C; &#xBD84;&#xB9AC;&#xB418;&#xB294; token &#xB4E4;&#xC774; &#xBAA8;&#xB450; &#xAC19;&#xB2E4;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.<br>whitespace &#xB294; &#xC804;&#xCC98;&#xB9AC;&#xAE30;&#xC5D0;&#xC11C; token &#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xC73C;&#xBBC0;&#xB85C; empty &#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>### &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xAC00; &#xAC19;&#xC740; &#xACBD;&#xC6B0; ###
+
+#define FOUR (2 + 2)                   // (2 , + , 2)    token &#xB4E4;&#xC774; &#xBAA8;&#xB450; &#xAC19;&#xB2E4;.
+#define FOUR         (2    +    2)     // (2 , + , 2)
+#define FOUR (2 /* two */ + 2)         // (2 , + , 2)    &#xC8FC;&#xC11D;&#xC740; &#xC81C;&#xC678;&#xB41C;&#xB2E4;.
+
+### &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xAC00; &#xB2E4;&#xB978; &#xACBD;&#xC6B0; ###
+
+#define FOUR (2 + 2)           // (2 , + , 2)    token &#xB4E4;&#xC774; &#xBAA8;&#xB450; &#xD2C0;&#xB9AC;&#xB2E4;.
+#define FOUR ( 2+2 )           // ( , 2+2 , )
+#define FOUR (2 * 2)           // (2 , * , 2)
+#define FOUR() (2 + 2)         // &#xAC19;&#xC740; &#xC774;&#xB984;&#xC758; function-like &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xB3D9;&#xC2DC;&#xC5D0; &#xC815;&#xC758;&#xD560; &#xC218; &#xC5C6;&#xB2E4;.
+</code></pre><h4 id="gcc-&#xBA85;&#xB839;-&#xB77C;&#xC778;&#xC5D0;&#xC11C;&#xB3C4;-&#xB9E4;&#xD06C;&#xB85C;&#xB97C;-&#xC815;&#xC758;&#xD560;-&#xC218;-&#xC788;&#xC2B5;&#xB2C8;&#xB2E4;">gcc &#xBA85;&#xB839; &#xB77C;&#xC778;&#xC5D0;&#xC11C;&#xB3C4; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC815;&#xC758;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</h4>
+<p>&#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC815;&#xC758;&#xD560; &#xB54C;&#xB294; <code>-D</code> &#xC635;&#xC158;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; <code>=</code> &#xB97C; &#xC774;&#xC6A9;&#xD574; &#xAC12;&#xC744; &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74;
+&#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; <code>1</code> &#xB85C; &#xC124;&#xC815;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-bash">$ gcpp -D __foo -D __bar=<span class="hljs-number">200</span>
+<span class="hljs-comment">#ifdef __foo</span>
+<span class="hljs-string">&quot;__foo&quot;</span> is : __foo
+<span class="hljs-string">&quot;__bar&quot;</span> is : __bar
+<span class="hljs-comment">#endif</span>
+@
+
+<span class="hljs-string">&quot;__foo&quot;</span> is : <span class="hljs-number">1</span>              <span class="hljs-comment"># __foo &#xAC12;&#xC740; 1 &#xC774; &#xB41C;&#xB2E4;.</span>
+<span class="hljs-string">&quot;__bar&quot;</span> is : <span class="hljs-number">200</span>
+</code></pre>
+<p>C standard library &#xD5E4;&#xB354;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xB54C; <code>_GNU_SOURCE</code> &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC815;&#xC758;&#xD558;&#xBA74; 
+gnu &#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xB418;&#xB294; &#xAC01;&#xC885; nonstandard &#xD655;&#xC7A5; &#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;
+( <code>/usr/include/features.h</code> &#xD30C;&#xC77C; &#xCC38;&#xC870; ).</p>
+<pre><code class="lang-bash">$ cat /usr/include/stdlib.h
+. . .
+extern void qsort (void *__base, size_t __nmemb, size_t __size,
+           __compar_fn_t __compar) __nonnull ((<span class="hljs-number">1</span>, <span class="hljs-number">4</span>));
+<span class="hljs-comment">#ifdef __USE_GNU</span>
+extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
+             __compar_d_fn_t __compar, void *__arg)
+  __nonnull ((<span class="hljs-number">1</span>, <span class="hljs-number">4</span>));
+<span class="hljs-comment">#endif</span>
+. . .
+
+$ cpp -M &lt;&lt;&lt; <span class="hljs-string">&quot;#include &lt;stdlib.h&gt;&quot;</span> 
+-: /usr/include/stdc-predef.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/features.h
+. . .
+
+$ grep -P -C1 <span class="hljs-string">&apos;define[ \t]+__USE_GNU&apos;</span> /usr/include/features.h 
+<span class="hljs-comment">#ifdef  _GNU_SOURCE</span>
+<span class="hljs-comment"># define __USE_GNU      1</span>
+<span class="hljs-comment">#endif</span>
+
+<span class="hljs-comment"># _GNU_SOURCE &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC815;&#xC758;&#xB418;&#xBA74; qsort_r &#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</span>
+
+$ cpp &lt;&lt;&lt; <span class="hljs-string">&quot;#include &lt;stdlib.h&gt;&quot;</span> | grep qsort
+extern void qsort (void *__base, size_t __nmemb, size_t __size,
+
+$ cpp -D_GNU_SOURCE &lt;&lt;&lt; <span class="hljs-string">&quot;#include &lt;stdlib.h&gt;&quot;</span> | grep qsort
+extern void qsort (void *__base, size_t __nmemb, size_t __size,
+extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
+</code></pre>
+<h1 id="quiz">Quiz</h1>
+<p>&#xB2E4;&#xC74C;&#xC740; socket &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC5D0;&#xC11C;  read, write &#xC744; &#xD560;&#xB54C; &#xAC01; &#xB2E8;&#xACC4;&#xBCC4;&#xB85C; &#xC18C;&#xCF13; &#xBC84;&#xD37C;&#xC758; &#xC0C1;&#xD0DC;&#xB97C; 
+&#xCD9C;&#xB825;&#xD574;&#xC8FC;&#xB294; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xC608;&#xC785;&#xB2C8;&#xB2E4;.
+&#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xB05D;&#xB0B4;&#xACE0; &#xB9E4;&#xD06C;&#xB85C; &#xCD9C;&#xB825;&#xC744; &#xC81C;&#xAC70;&#xD558;&#xB824;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C;&#xD560;&#xAE4C;&#xC694;?</p>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> CHECK_BUF_SZ( $fd ) do { \
+        size_t size = <span class="hljs-number">0</span>; \
+        printf (<span class="hljs-string">&quot;buffer size : &quot;</span>); \
+        ioctl ($fd, FIONREAD, &amp;size); \
+        printf (<span class="hljs-string">&quot;IN: %lu&quot;</span>, size); \
+        ioctl ($fd, TIOCOUTQ, &amp;size); \
+        printf (<span class="hljs-string">&quot; / OUT: %lu\n&quot;</span>, size); \
+} while (<span class="hljs-number">0</span>)</span>
+
+    . . .
+    CHECK_BUF_SZ (sockfd);        <span class="hljs-comment">// &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC774;&#xC6A9;&#xD574; &#xD604;&#xC7AC; &#xC18C;&#xCF13; &#xBC84;&#xD37C; &#xC0C1;&#xD0DC;&#xB97C; &#xCD9C;&#xB825;</span>
+
+    ret = send (sockfd, buf, <span class="hljs-keyword">sizeof</span> buf, MSG_DONTWAIT);
+    <span class="hljs-built_in">printf</span> (<span class="hljs-string">&quot;send... done : ret = %d\n&quot;</span>, ret);
+
+    CHECK_BUF_SZ (sockfd);    
+    sleep(<span class="hljs-number">5</span>);
+
+    ret = recv (sockfd, buf, <span class="hljs-keyword">sizeof</span> buf, MSG_DONTWAIT);
+    <span class="hljs-built_in">printf</span> (<span class="hljs-string">&quot;recv... done : ret = %d\n&quot;</span>, ret);
+
+    CHECK_BUF_SZ (sockfd);    
+    . . .
+
+<span class="hljs-preprocessor">#########  output  #########</span>
+
+buffer size : IN: <span class="hljs-number">0</span> / OUT: <span class="hljs-number">0</span>              &lt;---- &#xB9E4;&#xD06C;&#xB85C; &#xCD9C;&#xB825;
+send... done : ret = <span class="hljs-number">2586539</span>
+buffer size : IN: <span class="hljs-number">0</span> / OUT: <span class="hljs-number">2553798</span>
+recv... done : ret = <span class="hljs-number">81280</span>
+buffer size : IN: <span class="hljs-number">202</span> / OUT: <span class="hljs-number">2415282</span>
+</code></pre>
+<p>&#xB2E4;&#xC74C;&#xACFC;&#xAC19;&#xC774; <code>CHECK_BUF_SZ</code> &#xB9E4;&#xD06C;&#xB85C;&#xB97C; <code>#undef</code> &#xD55C;&#xD6C4;&#xC5D0; body &#xAC00; empty &#xC778; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xB2E4;&#xC2DC; &#xC815;&#xC758;&#xD574;&#xC8FC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> CHECK_BUF_SZ( $fd ) do { \
+        size_t size = <span class="hljs-number">0</span>; \
+        printf (<span class="hljs-string">&quot;buffer size : &quot;</span>); \
+        ioctl ($fd, FIONREAD, &amp;size); \
+        printf (<span class="hljs-string">&quot;IN: %lu&quot;</span>, size); \
+        ioctl ($fd, TIOCOUTQ, &amp;size); \
+        printf (<span class="hljs-string">&quot; / OUT: %lu\n&quot;</span>, size); \
+} while (<span class="hljs-number">0</span>)</span>
+
+<span class="hljs-preprocessor">#<span class="hljs-keyword">undef</span>  CHECK_BUF_SZ                 <span class="hljs-comment">// &#xBA3C;&#xC800; CHECK_BUF_SZ &#xB9E4;&#xD06C;&#xB85C;&#xB97C; #undef &#xD558;&#xACE0;</span></span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> CHECK_BUF_SZ(fd)             <span class="hljs-comment">// body &#xAC00; empty &#xC778; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xB2E4;&#xC2DC; &#xC815;&#xC758;</span></span>
+    . . .
+    CHECK_BUF_SZ (sockfd);
+
+    ret = send (sockfd, buf, <span class="hljs-keyword">sizeof</span> buf, MSG_DONTWAIT);
+    <span class="hljs-built_in">printf</span> (<span class="hljs-string">&quot;send... done : ret = %d\n&quot;</span>, ret);
+    . . .
+<span class="hljs-preprocessor">#########  output  #########</span>
+
+send... done : ret = <span class="hljs-number">2586539</span>        <span class="hljs-comment">// &#xB9E4;&#xD06C;&#xB85C; &#xCD9C;&#xB825;&#xC774; &#xC81C;&#xAC70;&#xB41C;&#xB2E4;.</span>
+recv... done : ret = <span class="hljs-number">81280</span>
+</code></pre>
+<p>&#xB610;&#xD55C; &#xCEF4;&#xD30C;&#xC77C;&#xC2DC; <code>DEBUG</code> &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758; &#xC5EC;&#xBD80;&#xC5D0; &#xB530;&#xB77C; &#xCD9C;&#xB825;&#xC744; &#xC870;&#xC815;&#xD558;&#xB824;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xD574;&#xC8FC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">ifndef</span> DEBUG</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">undef</span>  CHECK_BUF_SZ</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> CHECK_BUF_SZ(a)</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">endif</span></span>
+
+$ gcc -D DEBUG test.c       <span class="hljs-comment">// &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC801;&#xC6A9;&#xB418;&#xC5B4; &#xCD9C;&#xB825;&#xB41C;&#xB2E4;.</span>
+$ gcc test.c                <span class="hljs-comment">// &#xB9E4;&#xD06C;&#xB85C; &#xCD9C;&#xB825;&#xC774; &#xC548;&#xB41C;&#xB2E4;.</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./cpp.html" class="navigation navigation-prev " aria-label="Previous page: CPP"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./function-like_macros.html" class="navigation navigation-next " aria-label="Next page: Function-like Macros"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

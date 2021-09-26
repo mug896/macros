@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161001174-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161001174-6');
+</script>
+
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>File Inclusion | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./m4_builtin_macros.html" />
+    
+    
+    <link rel="prev" href="./m4_input_control.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.7"
+        data-chapter-title="File Inclusion"
+        data-filepath="m4_file_inclusion.md"
+        data-basepath="."
+
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bug_reports.html">
+            
+                
+                    <a href="./bug_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Bug reports
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="cpp.html">
+            
+                
+                    <a href="./cpp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CPP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="macros.html">
+            
+                
+                    <a href="./macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="function-like_macros.html">
+            
+                
+                    <a href="./function-like_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Function-like Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="one_two_hash.html">
+            
+                
+                    <a href="./one_two_hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        # , ##
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="variadic_macros.html">
+            
+                
+                    <a href="./variadic_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                        Variadic Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="argument_prescan.html">
+            
+                
+                    <a href="./argument_prescan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                        Argument Prescan
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="predefined_macros.html">
+            
+                
+                    <a href="./predefined_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                        Predefined Macros
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="conditionals.html">
+            
+                
+                    <a href="./conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="diagnostics.html">
+            
+                
+                    <a href="./diagnostics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Diagnostics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="line_control.html">
+            
+                
+                    <a href="./line_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Line Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="pragmas.html">
+            
+                
+                    <a href="./pragmas.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Pragmas
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="command_line_options.html">
+            
+                
+                    <a href="./command_line_options.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Command-line options
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="m4.html">
+            
+                
+                    <a href="./m4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        M4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="m4_quotes.html">
+            
+                
+                    <a href="./m4_quotes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Quotes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="m4_positional_parameters.html">
+            
+                
+                    <a href="./m4_positional_parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Positional Parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="m4_local_variables.html">
+            
+                
+                    <a href="./m4_local_variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Local Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="m4_conditionals_and_loops.html">
+            
+                
+                    <a href="./m4_conditionals_and_loops.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Conditionals and Loops
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="m4_diverting.html">
+            
+                
+                    <a href="./m4_diverting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Diverting
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="m4_input_control.html">
+            
+                
+                    <a href="./m4_input_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Input Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.7" data-path="m4_file_inclusion.html">
+            
+                
+                    <a href="./m4_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        File Inclusion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="m4_builtin_macros.html">
+            
+                
+                    <a href="./m4_builtin_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Built-in Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="m4_arithmetic.html">
+            
+                
+                    <a href="./m4_arithmetic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        Arithmatic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="m4_text_handling.html">
+            
+                
+                    <a href="./m4_text_handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        Text Handling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="m4_shell_commands.html">
+            
+                
+                    <a href="./m4_shell_commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        Shell Commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="m4_miscellaneous.html">
+            
+                
+                    <a href="./m4_miscellaneous.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        Miscellaneous
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="m4_debugging.html">
+            
+                
+                    <a href="./m4_debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Debugging
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="file-inclusion">File Inclusion</h1>
+<h3 id="include-sinclude">include, sinclude</h3>
+<blockquote>
+<p><strong>include</strong> ( <em>File</em> )<br><strong>sinclude</strong> ( <em>File</em> )</p>
+</blockquote>
+<p>m4 &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD30C;&#xC77C;&#xC744; &#xC5EC;&#xB7EC; &#xAC1C;&#xB85C; &#xB098;&#xB204;&#xC5B4; &#xC791;&#xC131;&#xD55C; &#xD6C4;&#xC5D0; &#xD544;&#xC694;&#xC5D0; &#xB530;&#xB77C; include &#xD574; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+<code>include</code> &#xB9E4;&#xD06C;&#xB85C;&#xC758; &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB294; &#xD574;&#xB2F9; &#xD30C;&#xC77C;&#xC758; contents &#xAC00; &#xB429;&#xB2C8;&#xB2E4;.
+&#xB9CC;&#xC57D;&#xC5D0; &#xD30C;&#xC77C;&#xC774; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xAC70;&#xB098;, &#xC77D;&#xC744; &#xC218; &#xC5C6;&#xAC70;&#xB098;, &#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC774;&#xAC70;&#xB098; &#xD560; &#xACBD;&#xC6B0;&#xB294;
+&#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB294; void &#xAC00; &#xB429;&#xB2C8;&#xB2E4;.
+<code>include</code> &#xB9E4;&#xD06C;&#xB85C;&#xC758; &#xACBD;&#xC6B0; stderr &#xB85C; &#xC624;&#xB958; &#xBA54;&#xC2DC;&#xC9C0;&#xAC00; &#xCD9C;&#xB825;&#xB418;&#xACE0; m4 &#xBA85;&#xB839;&#xC758; &#xC885;&#xB8CC; &#xC0C1;&#xD0DC; &#xAC12;&#xB3C4; 
+&#xC624;&#xB958;&#xAC00; &#xB418;&#xC9C0;&#xB9CC; <code>sinclude</code> ( silent include ) &#xB9E4;&#xD06C;&#xB85C;&#xC758; &#xACBD;&#xC6B0;&#xB294; &#xC624;&#xB958;&#xAC00; &#xBB34;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@                               
+1111111
+include(`not_exist.m4&apos;)dnl           # include &#xB9E4;&#xD06C;&#xB85C;
+2222222
+@
+
+1111111
+m4:stdin:2: cannot open `not_exist.m4&apos;: No such file or directory
+2222222
+
+$ echo $?     # &#xC624;&#xB958;
+1
+---------------------------
+
+$ m4 &lt;&lt;\@
+1111111
+sinclude(`not_exist.m4&apos;)dnl          # sinclude &#xB9E4;&#xD06C;&#xB85C;
+2222222
+@
+
+1111111
+2222222
+
+$ echo $?     # &#xC624;&#xB958;&#xAC00; &#xBB34;&#xC2DC;&#xB41C;&#xB2E4;.
+0
+</code></pre><p>m4 &#xBA85;&#xB839;&#xC758; <code>-I</code> &#xC635;&#xC158;&#xC740; include &#xACBD;&#xB85C;&#xB97C; &#xC124;&#xC815;&#xD558;&#xB294;&#xB370; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.
+&#xB9CC;&#xC57D;&#xC5D0; &#xB3D9;&#xC77C;&#xD55C; &#xC774;&#xB984;&#xC758; &#xD30C;&#xC77C;&#xC774; &#xD604;&#xC7AC; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xB3C4; &#xC874;&#xC7AC;&#xD558;&#xBA74; &#xD604;&#xC7AC; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0; &#xC788;&#xB294;
+&#xD30C;&#xC77C;&#xC774; &#xC0AC;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ cat /usr/share/doc/m4/examples/incl.m4 
+Include file start
+foo
+Include file end
+
+$ m4 &lt;&lt;\@ -I /usr/share/doc/m4/examples
+define(`foo&apos;, `hello include&apos;)dnl
+include(`incl.m4&apos;)dnl
+@
+
+Include file start
+hello include               # incl.m4 &#xD30C;&#xC77C;&#xC5D0; &#xC788;&#xB294; foo &#xAC00; &#xD655;&#xC7A5;&#xB41C;&#xB2E4;.
+Include file end
+</code></pre><p>&#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xC5D0; include &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xD3EC;&#xD568;&#xB420; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xB2E4;&#xC74C; &#xCCAB; &#xBC88;&#xC9F8; &#xACBD;&#xC6B0;&#xB294; include &#xB9E4;&#xD06C;&#xB85C;&#xC5D0; quotes &#xC774; &#xC5C6;&#xC73C;&#xBBC0;&#xB85C;
+include &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xD655;&#xC7A5;&#xB418;&#xC5B4; <code>incl.m4</code> &#xD30C;&#xC77C;&#xC758; contents &#xAC00; 
+bar &#xB9E4;&#xD06C;&#xB85C;&#xC758; &#xAC12;&#xC774; &#xB429;&#xB2C8;&#xB2E4;.
+&#xB450; &#xBC88;&#xC9F8;&#xC758; &#xACBD;&#xC6B0;&#xB294; include &#xB9E4;&#xD06C;&#xB85C;&#xC5D0; quotes &#xC774; &#xC874;&#xC7AC;&#xD558;&#xBBC0;&#xB85C; 
+bar &#xB9E4;&#xD06C;&#xB85C;&#xC758; &#xAC12;&#xC740; include &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xB418;&#xACE0;
+bar &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC0AC;&#xC6A9;&#xB41C; &#xC704;&#xCE58;&#xC5D0;&#xC11C; &#xD655;&#xC7A5;&#xB418;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.
+&#xB2E4;&#xC74C; &#xC608;&#xC81C;&#xC758; &#xACBD;&#xC6B0;&#xB294; &#xACB0;&#xACFC;&#xAC00; &#xB3D9;&#xC77C;&#xD558;&#xC9C0;&#xB9CC; &#xB9CC;&#xC57D;&#xC5D0; <code>incl.m4</code> &#xD30C;&#xC77C; &#xB0B4;&#xC6A9; &#xC911;&#xC5D0;
+quotes, commas, parentheses &#xB4F1;&#xC774; &#xC874;&#xC7AC;&#xD558;&#xBA74; &#xCCAB; &#xBC88;&#xC9F8; &#xACBD;&#xC6B0;&#xB294; &#xC624;&#xB958;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@ -I /usr/share/doc/m4/examples      $ m4 &lt;&lt;\@ -I /usr/share/doc/m4/examples
+define(`bar&apos;, include(`incl.m4&apos;))            define(`bar&apos;, `include(`incl.m4&apos;)&apos;)
+This is `bar&apos;:  &gt;&gt;&gt;bar&lt;&lt;&lt;                    This is `bar&apos;:  &gt;&gt;&gt;bar&lt;&lt;&lt;
+@                                            @
+
+This is bar:  &gt;&gt;&gt;Include file start          This is bar:  &gt;&gt;&gt;Include file start
+foo                                          foo
+Include file end                             Include file end
+&lt;&lt;&lt;                                          &lt;&lt;&lt;
+</code></pre><h4 id="&#xD655;&#xC7A5;-&#xC5C6;&#xC774;-&#xD30C;&#xC77C;&#xC744;-include-&#xD558;&#xB824;&#xBA74;">&#xD655;&#xC7A5; &#xC5C6;&#xC774; &#xD30C;&#xC77C;&#xC744; include &#xD558;&#xB824;&#xBA74;</h4>
+<p><a href="m4_diverting.html#undivert-include">undivert</a> &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./m4_input_control.html" class="navigation navigation-prev " aria-label="Previous page: Input Control"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./m4_builtin_macros.html" class="navigation navigation-next " aria-label="Next page: Built-in Macros"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

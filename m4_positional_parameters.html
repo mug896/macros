@@ -1,0 +1,910 @@
+<!DOCTYPE HTML>
+<html lang="ko" >
+    
+    <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161001174-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161001174-6');
+</script>
+
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Positional Parameters | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./m4_local_variables.html" />
+    
+    
+    <link rel="prev" href="./m4_quotes.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.2"
+        data-chapter-title="Positional Parameters"
+        data-filepath="m4_positional_parameters.md"
+        data-basepath="."
+
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="bug_reports.html">
+            
+                
+                    <a href="./bug_reports.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Bug reports
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="cpp.html">
+            
+                
+                    <a href="./cpp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        CPP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="macros.html">
+            
+                
+                    <a href="./macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="function-like_macros.html">
+            
+                
+                    <a href="./function-like_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Function-like Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="one_two_hash.html">
+            
+                
+                    <a href="./one_two_hash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        # , ##
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="variadic_macros.html">
+            
+                
+                    <a href="./variadic_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                        Variadic Macros
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="argument_prescan.html">
+            
+                
+                    <a href="./argument_prescan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                        Argument Prescan
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="predefined_macros.html">
+            
+                
+                    <a href="./predefined_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                        Predefined Macros
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="conditionals.html">
+            
+                
+                    <a href="./conditionals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Conditionals
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="diagnostics.html">
+            
+                
+                    <a href="./diagnostics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Diagnostics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="line_control.html">
+            
+                
+                    <a href="./line_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Line Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="pragmas.html">
+            
+                
+                    <a href="./pragmas.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Pragmas
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="command_line_options.html">
+            
+                
+                    <a href="./command_line_options.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Command-line options
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="m4.html">
+            
+                
+                    <a href="./m4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        M4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="m4_quotes.html">
+            
+                
+                    <a href="./m4_quotes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Quotes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="m4_positional_parameters.html">
+            
+                
+                    <a href="./m4_positional_parameters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Positional Parameters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="m4_local_variables.html">
+            
+                
+                    <a href="./m4_local_variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Local Variables
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="m4_conditionals_and_loops.html">
+            
+                
+                    <a href="./m4_conditionals_and_loops.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Conditionals and Loops
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="m4_diverting.html">
+            
+                
+                    <a href="./m4_diverting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Diverting
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="m4_input_control.html">
+            
+                
+                    <a href="./m4_input_control.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Input Control
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="m4_file_inclusion.html">
+            
+                
+                    <a href="./m4_file_inclusion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        File Inclusion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="m4_builtin_macros.html">
+            
+                
+                    <a href="./m4_builtin_macros.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        Built-in Macros
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="m4_arithmetic.html">
+            
+                
+                    <a href="./m4_arithmetic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        Arithmatic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="m4_text_handling.html">
+            
+                
+                    <a href="./m4_text_handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        Text Handling
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="m4_shell_commands.html">
+            
+                
+                    <a href="./m4_shell_commands.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        Shell Commands
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="m4_miscellaneous.html">
+            
+                
+                    <a href="./m4_miscellaneous.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        Miscellaneous
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="m4_debugging.html">
+            
+                
+                    <a href="./m4_debugging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        Debugging
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="positional-parameters">Positional Parameters</h1>
+<p>&#xC804;&#xB2EC;&#xB418;&#xB294; &#xC778;&#xC218;&#xB4E4;&#xC740; shell &#xC5D0;&#xC11C;&#xCC98;&#xB7FC; &#xC790;&#xB3D9;&#xC73C;&#xB85C; positional parameters &#xC5D0; &#xD560;&#xB2F9;&#xB429;&#xB2C8;&#xB2E4;.
+&#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xAE30;&#xD638;&#xC758; &#xC758;&#xBBF8;&#xC640; &#xAE30;&#xB2A5;&#xB3C4; shell &#xACFC; &#xB3D9;&#xC77C;&#xD569;&#xB2C8;&#xB2E4;.
+&#xBCC0;&#xC218;&#xAC12;&#xC740; quotes &#xC5D0; &#xAD00;&#xACC4;&#xC5C6;&#xC774; &#xD655;&#xC7A5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p>gnu m4 &#xC5D0;&#xC11C;&#xB294; $1, $2, $3 ... $n &#xBC88;&#xD638;&#xB85C; &#xB450; &#xC790;&#xB9AC; &#xC774;&#xC0C1;&#xB3C4; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<pre><code>$ m4 &lt;&lt;\@
+define(foo, ``$0&apos;&apos;)                 # $0 : &#xB9E4;&#xD06C;&#xB85C; &#xC790;&#xC2E0;&#xC758; &#xC774;&#xB984;
+
+hello foo(100,200,300) macro!    
+@
+
+hello foo macro!
+----------------------------
+
+$ m4 &lt;&lt;\@
+define(foo, `$1&apos; `$2&apos; `$3&apos;)         # $1 : &#xCCAB;&#xBC88;&#xC9F8; &#xC778;&#xC218;, $2 : &#xB450;&#xBC88;&#xC9F8; &#xC778;&#xC218; ...
+
+hello foo(100,200,300) macro!    
+@
+
+hello 100 200 300 macro!
+----------------------------
+
+$ m4 &lt;&lt;\@
+define(foo, `$#&apos;)                   # $# : &#xC804;&#xCCB4; &#xC778;&#xC218; &#xAC1C;&#xC218;
+
+hello foo(100,200,300) macro!
+@
+
+hello 3 macro!
+----------------------------
+
+$ m4 &lt;&lt;\@
+define(foo, ``$*&apos;&apos;)                 # $* : &#xC804;&#xB2EC;&#xB41C; &#xC804;&#xCCB4; &#xC778;&#xC218;&#xB4E4;
+
+hello foo(100,200,300) macro!
+@
+
+hello 100,200,300 macro!
+----------------------------
+
+$ m4 &lt;&lt;\@
+define(foo, ``$@&apos;&apos;)                 # $@ : &#xC804;&#xB2EC;&#xB41C; &#xC804;&#xCCB4; &#xC778;&#xC218;&#xB4E4;
+                                    # $* &#xC640;&#xC758; &#xCC28;&#xC774;&#xC810;&#xC740; &#xC778;&#xC218;&#xB4E4;&#xC774; &#xC790;&#xB3D9;&#xC73C;&#xB85C; quote &#xC774; &#xB41C;&#xB2E4;.
+hello foo(100,200,300) macro!
+@
+
+hello `100&apos;,`200&apos;,`300&apos; macro!      # &#xC778;&#xC218;&#xB4E4;&#xC774; &#xC790;&#xB3D9;&#xC73C;&#xB85C; quote &#xC774; &#xB41C;&#xB2E4;.
+</code></pre><p>&#xD55C; &#xAC00;&#xC9C0; <code>$#</code> &#xAC12;&#xACFC; &#xAD00;&#xB828;&#xD574;&#xC11C; &#xC8FC;&#xC758;&#xD560; &#xC810;&#xC740; <code>count()</code> &#xB3C4; &#xC778;&#xC218;&#xC758; &#xAC1C;&#xC218;&#xAC00; <code>1</code> &#xC785;&#xB2C8;&#xB2E4;.
+&#xC65C;&#xB0D0;&#xD558;&#xBA74; &#xC778;&#xC218; &#xAC12;&#xC740; empty &#xAC00; &#xB420; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;.
+&#xB530;&#xB77C;&#xC11C; <code>$#</code> &#xAC12;&#xC774; <code>0</code> &#xC774; &#xB418;&#xB294; &#xACBD;&#xC6B0;&#xB294; <code>()</code> &#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xC744; &#xACBD;&#xC6B0;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@                                     $ m4 &lt;&lt;\@
+define(`count&apos;, ``$0&apos;: $# args&apos;)              define(`foo&apos;, `bar($@)&apos;)
+count                                         define(`bar&apos;, `$# args&apos;)
+count()                                       
+count(1)                                      foo  
+count(1,)                                     @
+@                                             
+                                              1 args     # bar() &#xAC00; &#xB418;&#xBBC0;&#xB85C;
+count: 0 args
+count: 1 args
+count: 1 args
+count: 2 args
+</code></pre><p><code>$#</code> &#xB294; &#xACB0;&#xACFC;&#xAC00; &#xC22B;&#xC790;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; quote &#xC744; &#xD558;&#xC9C0; &#xC54A;&#xC544;&#xB3C4; &#xB418;&#xC9C0;&#xB9CC;
+<code>$#</code> &#xC5D0;&#xC11C; <code>#</code> &#xBB38;&#xC790;&#xB294; m4 &#xC5D0;&#xC11C; comment &#xC758; &#xC2DC;&#xC791;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xBBC0;&#xB85C;
+<code>$#</code> &#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74; &#xC9C1;&#xC811;&#xC774;&#xB4E0; &#xAC04;&#xC811;&#xC774;&#xB4E0; quotes &#xC548;&#xC5D0; &#xC788;&#xC5B4;&#xC57C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@                         $ m4 &lt;&lt;\@
+define(foo, $2)                   define(foo, `$#&apos;)
+foo(100,200,300)                  foo(100,200,300)
+@                                 @
+
+200                               3
+-------------------------------------------------
+
+$ m4 &lt;&lt;\@
+define(foo, $#)           # &#xC624;&#xB958;
+foo(100,200,300)
+@
+
+m4:stdin:1: ERROR: end of file in argument list
+</code></pre><h3 id="&#xC778;&#xC218;&#xC758;-&#xAC1C;&#xC218;">&#xC778;&#xC218;&#xC758; &#xAC1C;&#xC218;</h3>
+<p>&#xC804;&#xB2EC;&#xB41C; &#xC778;&#xC218;&#xAC00; prescan &#xC5D0; &#xC758;&#xD574; quotes &#xC774; &#xC81C;&#xAC70;&#xB41C;&#xB2E4;&#xACE0; &#xD574;&#xC11C; &#xC778;&#xC218;&#xC758; &#xAC1C;&#xC218;&#xAC00; &#xBCC0;&#xACBD;&#xB418;&#xB294; &#xAC83;&#xC740; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;.
+&#xB2E4;&#xC74C; &#xCCAB; &#xBC88;&#xC9F8; &#xC608;&#xC81C;&#xC758; &#xACBD;&#xC6B0; foo &#xB9E4;&#xD06C;&#xB85C;&#xC5D0; &#xC804;&#xB2EC;&#xB418;&#xB294; &#xC778;&#xC218;&#xB4E4;&#xC5D0; prescan &#xC774; &#xC77C;&#xC5B4;&#xB098; quotes &#xC774; &#xC81C;&#xAC70;&#xB418;&#xC5B4;
+<code>`11, 22, 33&apos; &#xC640; 44 &#xB294; ---&gt;  11, 22, 33 &#xC640; 44</code> &#xAC00; &#xB418;&#xC9C0;&#xB9CC;
+&#xADF8;&#xB807;&#xB2E4;&#xACE0; &#xC778;&#xC218;&#xC758; &#xAC1C;&#xC218;&#xAC00; <code>4</code> &#xAC1C;&#xAC00; &#xB418;&#xB294; &#xAC83;&#xC740; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(`foo&apos;, `$#&apos;)  
+
+foo(`11, 22, 33&apos;, 44)       # &#xBA3C;&#xC800; `11, 22, 33&apos; &#xC640; 44 &#xB450;&#xAC1C;&#xC758; &#xC778;&#xC218;&#xAC00; foo &#xB9E4;&#xD06C;&#xB85C;&#xC5D0; 
+@                           # &#xC804;&#xB2EC;&#xB418;&#xACE0; &#xC774;&#xD6C4; prescan &#xC5D0;&#xC758;&#xD574; quotes &#xC774; &#xC81C;&#xAC70;&#xB41C;&#xB2E4;.
+
+2
+---------------------
+
+$ m4 &lt;&lt;\@
+define(`foo&apos;, ``$@&apos;&apos;)       1. foo &#xB294; `$@&apos; &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+                            2. foo &#xB9E4;&#xD06C;&#xB85C;&#xC5D0; `11, 22, 33&apos; &#xC640; 44 &#xB450;&#xAC1C;&#xC758; &#xC778;&#xC218;&#xAC00; &#xC804;&#xB2EC;&#xB41C;&#xB2E4;.
+foo(`11, 22, 33&apos;, 44)       3. &#xC804;&#xB2EC;&#xB41C; &#xC778;&#xC218;&#xC5D0; prescan &#xC774; &#xC77C;&#xC5B4;&#xB098; &#xCCAB;&#xBC88;&#xC9F8; &#xC778;&#xC218;&#xB294; quotes &#xC774; &#xC81C;&#xAC70;&#xB41C;&#xB2E4;.
+@                           4. `$@&apos; &#xC815;&#xC758;&#xC5D0; &#xB530;&#xB77C; &#xD655;&#xC7A5;&#xB418;&#xBA74; ``11, 22, 33&apos;,`44&apos;&apos; &#xAC00; &#xB41C;&#xB2E4;.
+                            5. &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xC5D0; main scan &#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xBA74; quotes &#xC774; &#xD55C;&#xB2E8;&#xACC4; &#xC81C;&#xAC70;&#xB418;&#xBBC0;&#xB85C;
+`11, 22, 33&apos;,`44&apos;           6. `11, 22, 33&apos;,`44&apos; &#xAC00; &#xB41C;&#xB2E4;.
+</code></pre><p>&#xC804;&#xB2EC;&#xB41C; &#xC778;&#xC218;&#xAC00; comma  &#xC5D0;&#xC758;&#xD574; &#xBD84;&#xB9AC;&#xB418;&#xB294; &#xACBD;&#xC6B0;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xACBD;&#xC6B0;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(`foo&apos;, `$#&apos;)                    
+define(`bar&apos;, `foo(`$2&apos;, $1)&apos;)         1. bar &#xB9E4;&#xD06C;&#xB85C;&#xB294; foo(`$2&apos;, $1) &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+                                       2. bar(`11, 22, 33&apos;, 44) &#xAC00; &#xD655;&#xC7A5;&#xB420;&#xB550; &#xBA3C;&#xC800; 
+bar(`11, 22, 33&apos;, 44)                     &#xC804;&#xB2EC;&#xB41C; &#xC778;&#xC218;&#xAC00; prescan &#xC5D0;&#xC758;&#xD574; quotes &#xC774;
+@                                         &#xC81C;&#xAC70;&#xB418;&#xACE0; bar &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xC5D0; &#xB530;&#xB77C; 
+                                          foo(`44&apos;, 11, 22, 33) &#xB85C; &#xD655;&#xC7A5;&#xB41C;&#xB2E4;.
+4                                      3. foo &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xBA74; &#xC778;&#xC218;&#xC758; &#xAC1C;&#xC218;&#xB294; 4 &#xAC1C;&#xAC00; &#xB41C;&#xB2E4;.
+----------------------------------
+
+$ m4 &lt;&lt;\@
+define(`foo&apos;, `$#&apos;)
+define(`bar&apos;, `foo(`$2&apos;, `$1&apos;)&apos;)       1. bar &#xB9E4;&#xD06C;&#xB85C;&#xB294; foo(`$2&apos;, `$1&apos;) &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+                                       2. bar(`11, 22, 33&apos;, 44) &#xAC00; &#xD655;&#xC7A5;&#xB420;&#xB550; &#xBA3C;&#xC800; 
+bar(`11, 22, 33&apos;, 44)                     &#xC804;&#xB2EC;&#xB41C; &#xC778;&#xC218;&#xAC00; prescan &#xC5D0;&#xC758;&#xD574; quotes &#xC774;
+@                                         &#xC81C;&#xAC70;&#xB418;&#xACE0; bar &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xC5D0; &#xB530;&#xB77C; 
+                                          foo(`44&apos;, `11, 22, 33&apos;) &#xB85C; &#xD655;&#xC7A5;&#xB41C;&#xB2E4;.
+2                                      3. foo &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xBA74; &#xC778;&#xC218;&#xC758; &#xAC1C;&#xC218;&#xB294; 2 &#xAC1C;&#xAC00; &#xB41C;&#xB2E4;.
+</code></pre><h4 id="positional-parameters-&#xB97C;-nesting-&#xD574;&#xC11C;-&#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74;">Positional parameters &#xB97C; nesting &#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74;</h4>
+<p>&#xAE30;&#xBCF8;&#xC801;&#xC73C;&#xB85C; positional parameters &#xB97C; &#xD558;&#xB098;&#xC758; &#xB9E4;&#xD06C;&#xB85C; &#xC815;&#xC758;&#xC5D0;&#xC11C; nesting &#xD574;&#xC11C;
+&#xC0AC;&#xC6A9;&#xD560; &#xC218;&#xB294; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xB2E4;&#xC74C;&#xC740; <code>foo(`xx&apos;)</code> &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB85C; <code>xx_yy_zz</code> &#xB97C; &#xB9CC;&#xB4E4;&#xB824;&#xACE0; &#xD55C;&#xAC83;&#xC778;&#xB370; 
+<code>zoo(`yy&apos;)</code> &#xC758; &#xC778;&#xC218;&#xAC12;&#xC774; &#xC801;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xC544; <code>xx_xx_zz</code> &#xACB0;&#xACFC;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(`foo&apos;,                           
+        `define(`zoo&apos;, ``$1_zz&apos;&apos;)define(`bar&apos;, ``$1_&apos;zoo(`yy&apos;)&apos;)bar&apos;)
+
+foo(`xx&apos;)
+@
+
+xx_xx_zz
+---------------------------
+
+1. foo &#xB294; define(`zoo&apos;, ``$1_zz&apos;&apos;)define(`bar&apos;, ``$1_&apos;zoo(`yy&apos;)&apos;)bar &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+2. foo(`xx&apos;) &#xAC00; &#xD655;&#xC7A5;&#xB418;&#xBA74; &#xC704; &#xC815;&#xC758;&#xC5D0; &#xC758;&#xD574;
+   zoo &#xB294; `xx_zz&apos; &#xB85C; &#xC815;&#xC758;&#xB418;&#xACE0; bar &#xB294; `xx_&apos;zoo(`yy&apos;) &#xB85C; &#xC815;&#xC758;&#xB418;&#xC5B4;
+   &#xB9C8;&#xC9C0;&#xB9C9;&#xC758; bar &#xB294; `xx_&apos;`xx_zz&apos;  ---&gt;  xx_xx_zz &#xB85C; &#xD655;&#xC7A5;&#xB41C;&#xB2E4;.
+</code></pre><p>&#xB530;&#xB77C;&#xC11C; positional parameters &#xAC12;&#xC774; &#xBCC0;&#xACBD;&#xB418;&#xB294; &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xBD84;&#xB9AC;&#xD574;&#xC11C; &#xC791;&#xC131;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(`zoo&apos;, ``$1_zz&apos;&apos;)       # zoo &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xBD84;&#xB9AC;&#xD574; &#xC791;&#xC131;
+define(`foo&apos;, `define(`bar&apos;, ``$1_&apos;zoo(`yy&apos;)&apos;)bar&apos;)
+
+foo(`xx&apos;)
+@
+
+xx_yy_zz
+-----------------------------
+
+1. zoo &#xB294; `$1_zz&apos; &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+2. foo &#xB294; define(`bar&apos;, ``$1_&apos;zoo(`yy&apos;)&apos;)bar &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+3. foo(`xx&apos;) &#xAC00; &#xD655;&#xC7A5;&#xB418;&#xBA74; &#xC704; &#xC815;&#xC758;&#xC5D0; &#xC758;&#xD574; 
+   &#xBA3C;&#xC800; bar &#xAC00; `xx_&apos;zoo(`yy&apos;) &#xB85C; &#xC815;&#xC758;&#xB418;&#xACE0;
+   &#xB9C8;&#xC9C0;&#xB9C9;&#xC758; bar &#xB294; `xx_&apos;`yy_zz&apos;  ---&gt;  xx_yy_zz &#xB85C; &#xD655;&#xC7A5;&#xB41C;&#xB2E4;.
+</code></pre><p>recursion &#xC758; &#xACBD;&#xC6B0;&#xB294; &#xBB38;&#xC81C;&#xAC00; &#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(`fac&apos;, `ifelse( $1, 1, 1, `eval($1 * fac(decr($1)))&apos;)&apos;)
+fac(10)
+@
+
+3628800
+---------------------------------
+
+1. fac &#xB9E4;&#xD06C;&#xB85C;&#xB294; ifelse( $1, 1, 1, `eval($1 * fac(decr($1)))&apos;) &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+2. fac(10) &#xAC00; &#xD655;&#xC7A5;&#xB418;&#xBA74; &#xC704; &#xC815;&#xC758;&#xC5D0; &#xB530;&#xB77C; eval(10 * fac(decr(10))) &#xAC00; &#xB41C;&#xB2E4;.
+3. &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB97C; &#xC0B4;&#xD3B4;&#xBCF4;&#xBA74; eval &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC874;&#xC7AC;&#xD558;&#xBBC0;&#xB85C; &#xD655;&#xC7A5;&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xAC8C; &#xB418;&#xACE0;
+   &#xBA3C;&#xC800; decr(10) ---&gt; 9 &#xAC00; &#xB418;&#xC5B4; fac(9) &#xAC00; &#xB418;&#xB294;&#xB370;
+   &#xC774;&#xAC83;&#xC740; &#xC55E;&#xC120; 2. &#xBC88;&#xACFC; &#xB2EE;&#xC740; &#xAF34;&#xC774;&#xBBC0;&#xB85C; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xBC18;&#xBCF5; &#xC2E4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.
+</code></pre><h2 id="shift">shift</h2>
+<blockquote>
+<p><strong>shift</strong> ( <em>ParameterList</em> )<br><code>()</code> &#xAC00; &#xC5C6;&#xC73C;&#xBA74; &#xB9E4;&#xD06C;&#xB85C;&#xB85C; &#xC778;&#xC2DD;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><code>shift</code> built-in &#xB9E4;&#xD06C;&#xB85C;&#xB3C4; shell &#xACFC; &#xB3D9;&#xC77C;&#xD569;&#xB2C8;&#xB2E4;.
+&#xC778;&#xC218;&#xB4E4;&#xC744; &#xC88C;&#xCE21;&#xC73C;&#xB85C; &#xD55C; &#xCE78;&#xC529; &#xC774;&#xB3D9;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xACB0;&#xACFC;&#xC801;&#xC73C;&#xB85C; &#xC81C;&#xC77C; &#xCC98;&#xC74C; &#xC778;&#xC218;&#xAC00; &#xC0AD;&#xC81C;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(foo, $1 and $2)
+
+hello foo(100, shift(200, 300)) macro!
+@
+
+hello 100 and 300 macro!
+----------------------------------
+
+$ m4 &lt;&lt;\@
+define(foo, `shift($@)&apos;)
+
+hello foo(100, 200, 300) macro!
+@
+
+hello 200,300 macro!
+</code></pre><h4 id="shift-&#xC5D0;&#xC11C;&#xB294;-&#xC778;&#xC218;-prescan-&#xC774;-&#xC77C;&#xC5B4;&#xB098;&#xC9C0;-&#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;">shift &#xC5D0;&#xC11C;&#xB294; &#xC778;&#xC218; prescan &#xC774; &#xC77C;&#xC5B4;&#xB098;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</h4>
+<p>&#xB2E4;&#xC74C; &#xC608;&#xC81C;&#xB97C; &#xBCF4;&#xBA74; shift &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC2E4;&#xD589;&#xB420; &#xB54C;&#xB9C8;&#xB2E4; quotes &#xC774; &#xD55C; &#xB2E8;&#xACC4;&#xC529; &#xC81C;&#xAC70;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>1. &#xCCAB; &#xBC88;&#xC9F8; shift &#xAC00;&#xB418;&#xBA74; ``222&apos;&apos;, ``333&apos;&apos;, ``444&apos;&apos; &#xAC00; &#xB418;&#xACE0;
+2. &#xB450; &#xBC88;&#xC9F8; shift &#xAC00;&#xB418;&#xBA74; ``333&apos;&apos;, ``444&apos;&apos; &#xAC00; &#xB418;&#xACE0; 
+2. &#xC138; &#xBC88;&#xC9F8; shift &#xAC00;&#xB418;&#xBA74; ``444&apos;&apos; &#xAC00; &#xB418;&#xACE0; 
+3. ``444&apos;&apos; &#xACB0;&#xACFC;&#xC5D0; &#xB300;&#xD574;&#xC11C; main scan  ---&gt;  `444&apos;
+
+$ m4 &lt;&lt;\@
+shift( shift( shift(``111&apos;&apos;, ``222&apos;&apos;, ``333&apos;&apos;, ``444&apos;&apos;)))
+@
+
+`444&apos;
+------------------------------
+
+$ m4 &lt;&lt;\@
+define(`abc&apos;, 100)
+shift(1, 2, `abc&apos;, 4)       1. shift &#xB97C; &#xD558;&#xBA74; &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xB294; &#xADF8;&#xB300;&#xB85C; 2,`abc&apos;,4 &#xAC00; &#xB418;&#xACE0;
+@                              quotes &#xC5D0;&#xC758;&#xD574; abc &#xB294; &#xD655;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.
+
+2,abc,4                     2. &#xD655;&#xC7A5; &#xACB0;&#xACFC;&#xC5D0; main scan &#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xC5EC; quotes &#xC774; &#xC81C;&#xAC70;&#xB428;.
+</code></pre><p>shift &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xC544;&#xB2D0; &#xACBD;&#xC6B0;&#xB294; &#xB9E4; &#xB2E8;&#xACC4;&#xB9C8;&#xB2E4; prescan &#xC5D0;&#xC758;&#xD574; quotes &#xC774; &#xD55C; &#xB2E8;&#xACC4;&#xC529; &#xC81C;&#xAC70;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+define(`foo&apos;, `$1&apos;)                       1. foo &#xB294; $1 &#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.
+
+foo( foo( foo(`````111&apos;&apos;&apos;&apos;&apos;)))            2. foo(foo(foo(`````111&apos;&apos;&apos;&apos;&apos;)))
+@                                         3. foo(foo(````111&apos;&apos;&apos;&apos;))
+                                          4. foo(```111&apos;&apos;&apos;)
+`111&apos;                                     5. ``111&apos;&apos; &#xACB0;&#xACFC;&#xC5D0; &#xB300;&#xD574; main scan --&gt; `111&apos;
+</code></pre><p>&#xB2E4;&#xC74C;&#xC758; &#xACBD;&#xC6B0; &#xC778;&#xC218; prescan &#xC774; &#xC77C;&#xC5B4;&#xB098;
+<code>`111, 222, 333&apos;  ---&gt;  111, 222, 333</code> &#xC774; &#xB41C; &#xD6C4;&#xC5D0; 
+shift &#xAC00; &#xB418;&#xC5B4; &#xACB0;&#xACFC;&#xAC00; <code>222, 333</code> &#xC774; &#xB418;&#xB294; &#xAC83;&#xC774; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;.
+&#xC804;&#xB2EC;&#xB418;&#xB294; &#xC778;&#xC218;&#xAC00; <code>1</code> &#xAC1C; &#xC774;&#xBBC0;&#xB85C; shift &#xAC00; &#xB418;&#xBA74; &#xACB0;&#xACFC;&#xAC00; empty &#xAC00; &#xB418;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 &lt;&lt;\@
+shift(`111, 222, 333&apos;)
+@
+
+empty
+</code></pre><h1 id="quiz">Quiz</h1>
+<p>&#xB9E4;&#xD06C;&#xB85C; &#xC778;&#xC218;&#xB85C; seperator &#xC640; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC804;&#xB2EC;&#xD558;&#xBA74; &#xAC01;&#xAC01;&#xC758; &#xC6D0;&#xC18C;&#xB97C;
+seperator &#xB97C; &#xC774;&#xC6A9;&#xD574; join &#xD558;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.
+join &#xD560; &#xB54C;&#xB294; empty &#xC778; &#xC6D0;&#xC18C;&#xB97C; &#xD3EC;&#xD568;&#xD560; &#xACBD;&#xC6B0;&#xC640; &#xC548; &#xD560; &#xACBD;&#xC6B0;&#xB97C; &#xC0DD;&#xAC01;&#xD574;&#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; empty &#xC778; &#xC6D0;&#xC18C;&#xB97C; &#xD3EC;&#xD568;&#xD574;&#xC11C; join &#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4 -dtel &lt;&lt;\@ 
+define(`joinall&apos;, ``$2&apos;_$0(`$1&apos;, shift($@))&apos;)
+define(`_joinall&apos;,
+    `ifelse(`$#&apos;, `2&apos;, `&apos;, ``$1$3&apos;$0(`$1&apos;, shift(shift($@)))&apos;)&apos;)
+
+joinall(`:&apos;, `foo&apos;, `bar&apos;, `zoo&apos;)
+joinall(`:&apos;, `foo&apos;, `&apos;, `zoo&apos;)
+@
+
+foo:bar:zoo
+foo::zoo          # empty &#xC778; &#xC6D0;&#xC18C;&#xB3C4; &#xD3EC;&#xD568;&#xB41C;&#xB2E4;.
+-------------------------------------
+
+1. joinall &#xB9E4;&#xD06C;&#xB85C;&#xB294; 2 &#xBC88;&#xC9F8; &#xC6D0;&#xC18C; &#xD558;&#xB098;&#xB97C; &#xC55E;&#xC73C;&#xB85C; &#xBE7C;&#xACE0; _joinall &#xB9E4;&#xD06C;&#xB85C;&#xB97C; &#xD638;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.
+   &#xC774;&#xB54C; &#xC778;&#xC218; &#xAD6C;&#xC131;&#xC744; _$0($@) &#xB300;&#xC2E0;&#xC5D0; _$0(`$1&apos;, shift($@)) &#xB85C; &#xBD84;&#xB9AC;&#xD558;&#xB294; &#xC774;&#xC720;&#xB294;
+   &#xCD5C;&#xC18C; 2 &#xAC1C;&#xC758; &#xC778;&#xC218;&#xAC00; &#xB418;&#xAC8C; &#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xC785;&#xB2C8;&#xB2E4;.
+2. $# &#xC778;&#xC218; &#xAC1C;&#xC218;&#xAC00; 2 &#xAC1C;&#xC77C; &#xACBD;&#xC6B0;&#xB294; empty &#xAC00; &#xBC18;&#xD658;&#xB418;&#xC5B4; &#xC885;&#xB8CC;&#xB418;&#xACE0; &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74;
+   seperator &#xC640; 3 &#xBC88;&#xC9F8; &#xC778;&#xC218;&#xB97C; &#xC55E;&#xC73C;&#xB85C; &#xBE7C;&#xACE0; &#xB2E4;&#xC2DC; &#xC790;&#xAE30; &#xC790;&#xC2E0;&#xC744; &#xD638;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.
+   &#xC774;&#xB54C; &#xC804;&#xB2EC;&#xB41C; &#xC804;&#xCCB4; &#xC6D0;&#xC18C;&#xB97C; 2 &#xBC88; shift &#xD574;&#xC11C; &#xB2E4;&#xC74C; &#xC6D0;&#xC18C;&#xAC00; $3 &#xC790;&#xB9AC;&#xC5D0; &#xC624;&#xAC8C; &#xD569;&#xB2C8;&#xB2E4;.
+</code></pre><p>&#xB2E4;&#xC74C;&#xC740; empty &#xC778; &#xC6D0;&#xC18C;&#xB294; &#xC81C;&#xC678;&#xD558;&#xACE0; join &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>empty &#xC778; &#xC6D0;&#xC18C;&#xB97C; &#xC81C;&#xC678;&#xD558;&#xACE0; join &#xD560; &#xB54C;&#xB294; &#xC880; &#xC0DD;&#xAC01;&#xD574;&#xC57C; &#xB420; &#xBD80;&#xBD84;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+&#xBA3C;&#xC800; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC791;&#xC131;&#xD574; &#xBCFC; &#xC218; &#xC788;&#xB294;&#xB370; &#xC774;&#xB7F4; &#xACBD;&#xC6B0; &#xC138; &#xBC88;&#xC9F8; &#xC785;&#xB825;&#xACFC; &#xAC19;&#xC774;
+&#xB450; &#xBC88;&#xC9F8; &#xC778;&#xC218; &#xAC12;&#xC774; empty &#xC77C; &#xACBD;&#xC6B0; &#xACB0;&#xACFC;&#xC5D0; <code>:</code> &#xAC00; &#xD3EC;&#xD568;&#xB418;&#xC5B4; <code>:bar</code> &#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4  &lt;&lt;\@
+define(`join&apos;,
+    `ifelse(`$#&apos;, 0, `&apos;, `$#&apos;, 1, `&apos;, `$#&apos;, 2, `$2&apos;, 
+        ``$2&apos;_$0(`$1&apos;, shift(shift($@)))&apos;)&apos;)
+define(`_join&apos;,
+    `ifelse(`$#$2&apos;, `2&apos;, `&apos;,
+        `ifelse(`$2&apos;, `&apos;, `&apos;, ``$1$2&apos;&apos;)$0(`$1&apos;, shift(shift($@)))&apos;)&apos;)
+
+join(`:&apos;, `foo&apos;, `bar&apos;, `zoo&apos;)
+join(`:&apos;, `foo&apos;, `&apos;, `zoo&apos;)
+join(`:&apos;, `&apos;, `bar&apos;)               # &#xB450; &#xBC88;&#xCA30; &#xC778;&#xC218; &#xAC12;&#xC774; empty
+@
+
+foo:bar:zoo
+foo:zoo                 # empty &#xC778; &#xC6D0;&#xC18C;&#xB294; &#xC81C;&#xC678;&#xB41C;&#xB2E4;.
+:bar              &lt;---- &#xACB0;&#xACFC;&#xAC00; bar &#xAC00; &#xB3FC;&#xC57C;&#xD55C;&#xB2E4;.
+</code></pre><p>&#xB530;&#xB77C;&#xC11C; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC791;&#xC131;&#xD574;&#xC57C; &#xC62C;&#xBC14;&#xB978; &#xACB0;&#xACFC;&#xAC00; &#xCD9C;&#xB825;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>$ m4  &lt;&lt;\@
+define(`join&apos;,
+    `ifelse(`$#&apos;, `2&apos;, ``$2&apos;&apos;,
+        `ifelse(`$2&apos;, `&apos;, `&apos;, ``$2&apos;_&apos;)$0(`$1&apos;, shift(shift($@)))&apos;)&apos;)
+define(`_join&apos;,
+    `ifelse(`$#$2&apos;, `2&apos;, `&apos;,
+        `ifelse(`$2&apos;, `&apos;, `&apos;, ``$1$2&apos;&apos;)$0(`$1&apos;, shift(shift($@)))&apos;)&apos;)
+
+join(`:&apos;, `foo&apos;, `bar&apos;, `zoo&apos;)
+join(`:&apos;, `foo&apos;, `&apos;, `zoo&apos;)
+join(`:&apos;, `&apos;, `bar&apos;)
+@
+
+foo:bar:zoo
+foo:zoo             
+bar
+----------------------------------------------------------
+
+1. &#xBA3C;&#xC800; join &#xB9E4;&#xD06C;&#xB85C;&#xB294; &#xC778;&#xC218;&#xAC00; 2 &#xAC1C; &#xC77C;&#xACBD;&#xC6B0; &#xB450;&#xBC88;&#xC9F8; &#xC778;&#xC218;&#xB97C; &#xBC18;&#xD658;&#xD558;&#xACE0; &#xC885;&#xB8CC;&#xD569;&#xB2C8;&#xB2E4;.
+   &#xC5EC;&#xAE30;&#xC11C; &#xB208;&#xC5EC;&#xACA8;&#xBCF4;&#xC544;&#xC57C; &#xB420; &#xC810;&#xC740; &#xB2E4;&#xC74C;&#xBC88; ifelse &#xC778;&#xB370;&#xC694;. $2 &#xAC12;&#xC774; empty &#xC774;&#xBA74; 
+   empty &#xAC00; &#xBC18;&#xD658;&#xB418;&#xC5B4; &#xB2E4;&#xC2DC; &#xC790;&#xAE30; &#xC790;&#xC2E0; $0 &#xC774; &#xD638;&#xCD9C;&#xB418;&#xC9C0;&#xB9CC; &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC744; &#xACBD;&#xC6B0;&#xB294;
+   &#xBC18;&#xD658;&#xAC12;&#xC774; `$2&apos;_ &#xAC00; &#xB418;&#xC5B4; &#xACB0;&#xACFC; &#xC801;&#xC73C;&#xB85C; `$2&apos;_$0( ... ) ---&gt; `$2&apos;_join( ... ) &#xAC00;&#xB418;&#xC5B4;
+   _join &#xB9E4;&#xD06C;&#xB85C;&#xAC00; &#xD638;&#xCD9C;&#xB429;&#xB2C8;&#xB2E4;.
+2. _join &#xB9E4;&#xD06C;&#xB85C;&#xB294; &#xC778;&#xC218; &#xAC1C;&#xC218;&#xAC00; 2 &#xAC1C;&#xC774;&#xACE0; $2 &#xAC12;&#xC774; empty &#xC774;&#xBA74; $#$2 == 2 &#xAC00; &#xB418;&#xC5B4; &#xC885;&#xB8CC;&#xB429;&#xB2C8;&#xB2E4;.
+   &#xB2E4;&#xC74C; ifelse &#xB294; $2 &#xAC12;&#xC774; empty &#xC774;&#xBA74; empty &#xB97C; &#xBC18;&#xD658;&#xD558;&#xACE0; &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC73C;&#xBA74; seperator &#xB97C; &#xCD94;&#xAC00;&#xD574;
+   $1$2 &#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xB54C; &#xACB0;&#xACFC;&#xAC00; $0 &#xACFC; &#xC5F0;&#xACB0;&#xB418;&#xBA74; &#xC548;&#xB418;&#xBBC0;&#xB85C; quote &#xC744; &#xB450;&#xBC88;&#xD588;&#xC8E0; ``$1$2&apos;&apos; 
+   &#xADF8;&#xB2E4;&#xC74C; &#xC804;&#xB2EC;&#xB41C; &#xC804;&#xCCB4; &#xC778;&#xC218;&#xB97C; 2 &#xBC88; shift &#xD574;&#xC11C; &#xB2E4;&#xC74C;&#xBC88; &#xC6D0;&#xC18C;&#xAC00; $2 &#xC704;&#xCE58;&#xC5D0; &#xC624;&#xAC8C;&#xD558;&#xACE0; 
+   $1 &#xB97C; &#xCCAB;&#xBC88;&#xC9F8; &#xC778;&#xC218;&#xB85C; &#xD574;&#xC11C; &#xB2E4;&#xC2DC; &#xC790;&#xAE30; &#xC790;&#xC2E0;&#xC744; &#xD638;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./m4_quotes.html" class="navigation navigation-prev " aria-label="Previous page: Quotes"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./m4_local_variables.html" class="navigation navigation-next " aria-label="Next page: Local Variables"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
