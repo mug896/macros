@@ -913,8 +913,8 @@ $ header-dump stdlib.h -- -D_GNU_SOURCE
                 tmp=<span class="hljs-variable">${1:2}</span>; <span class="hljs-built_in">test</span> -n <span class="hljs-string">&quot;<span class="hljs-variable">$tmp</span>&quot;</span> &amp;&amp; { <span class="hljs-built_in">shift</span>; <span class="hljs-built_in">set</span> -- <span class="hljs-string">&quot;-<span class="hljs-variable">${tmp}</span>&quot;</span> <span class="hljs-string">&quot;<span class="hljs-variable">$@</span>&quot;</span>; <span class="hljs-built_in">continue</span> ;}
                 <span class="hljs-built_in">shift</span>; <span class="hljs-built_in">continue</span> ;;
         <span class="hljs-keyword">esac</span>
-        <span class="hljs-keyword">if</span> [[ <span class="hljs-variable">$1</span> =~ ^[[:alnum:]_/]+\.h$ ]]; <span class="hljs-keyword">then</span>
-            hsum+=$<span class="hljs-string">&apos;\n\a\n#include &lt;&apos;</span><span class="hljs-variable">$1</span>$<span class="hljs-string">&apos;&gt;\n\a\n&apos;</span>
+        <span class="hljs-keyword">if</span> [[ <span class="hljs-variable">$1</span> =~ [[:alnum:]_/]+\.h ]]; <span class="hljs-keyword">then</span>
+            hsum+=$<span class="hljs-string">&apos;\n\a\n#include &lt;&apos;</span><span class="hljs-variable">$BASH_REMATCH</span>$<span class="hljs-string">&apos;&gt;\n\a\n&apos;</span>
         <span class="hljs-keyword">fi</span>
         <span class="hljs-built_in">shift</span>
     <span class="hljs-keyword">done</span>
